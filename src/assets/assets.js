@@ -10,6 +10,10 @@ import feature_vbo from "./feature_vbo.png"
 
 import bannerBg from './banner_bg.png'
 
+import cartMobileHand from './cart_mobile_hand.png'
+import starCoffeeBeans from './star_coffee_beans.png';
+import truckDelivery from './truck_delivery.png'
+
 
 const assets = {
     logo,
@@ -20,7 +24,10 @@ const assets = {
     feature_rbf,
     feature_hb,
     feature_vbo,
-    bannerBg
+    bannerBg,
+    cartMobileHand,
+    starCoffeeBeans,
+    truckDelivery
 }
 
 export default assets;

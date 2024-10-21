@@ -52,7 +52,7 @@ export function NavbarWithSimpleLinks() {
           <NavList theme="secondary" />
         </div>
         <Button color="gray" className="hidden lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
-          Sign in
+          Order Now
         </Button>
         <IconButton
           size="sm"
@@ -72,7 +72,7 @@ export function NavbarWithSimpleLinks() {
         <div className="mt-2 rounded-xl bg-white py-2">
           <NavList theme="dark" />
           <Button className="mb-2 bg-accent text-secondary font-tanAegan font-normal" fullWidth>
-            Sign in
+            Order Now
           </Button>
         </div>
       </Collapse>}
