@@ -21,12 +21,14 @@ const Banner = ({ bannerHeading, bannerContent, bannerButtonContent, bannerBackg
         >
           {bannerContent}
         </p>
-        <CallToAction
-          bgColor='white'
-          fontColor='dark'
-          content={bannerButtonContent}
-          widthRatio="1/4"
-        />
+        <div className="w-full md:w-1/2">
+          <CallToAction
+            bgColor='white'
+            fontColor='dark'
+            content={bannerButtonContent}
+            widthRatio="1/2"
+          />
+        </div>
       </div>
     </section>
   )
