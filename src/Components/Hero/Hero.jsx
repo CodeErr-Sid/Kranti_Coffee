@@ -19,7 +19,9 @@ const Hero = () => {
           <p className="font-quickSand font-medium text-sm sm:text-base md:text-lg w-full sm:w-11/12">
             Experience the bold, authentic flavors of our premium coffee, carefully sourced from the finest farms. Every sip brings you closer to nature’s finest harvest.
           </p>
-          <CallToAction content="Order Now" bgColor="accent" fontColor="secondary" />
+          <CallToAction
+            widthRatio="1/2"
+            content="Order Now" bgColor="accent" fontColor="secondary" />
         </div>
 
         {/* Right Image */}
