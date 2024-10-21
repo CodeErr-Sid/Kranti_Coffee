@@ -3,7 +3,7 @@ import Hero from '../../Components/Hero/Hero'
 import Features from '../../Components/Features/Features'
 import Banner from '../../Components/Banner/Banner'
 import Process from '../../Components/Process/Process'
-import Sourcing from '../../Components/Sourcing/Sourcing'
+import Sourcing from '../../Components/Testimonials/Sourcing/Sourcing'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 
 const Home = () => {
