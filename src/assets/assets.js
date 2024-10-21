@@ -14,6 +14,9 @@ import cartMobileHand from './cart_mobile_hand.png'
 import starCoffeeBeans from './star_coffee_beans.png';
 import truckDelivery from './truck_delivery.png'
 
+import testimonialPlaceHolder from './testimonial_place_holder.png'
+import double from './double.png'
+
 
 const assets = {
     logo,
@@ -27,7 +30,9 @@ const assets = {
     bannerBg,
     cartMobileHand,
     starCoffeeBeans,
-    truckDelivery
+    truckDelivery,
+    testimonialPlaceHolder,
+    double
 }
 
 export default assets;
