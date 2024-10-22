@@ -17,6 +17,9 @@ import truckDelivery from './truck_delivery.png'
 import testimonialPlaceHolder from './testimonial_place_holder.png'
 import double from './double.png'
 
+import coffeeBeansBag from './coffee_ beans_bag.png';
+import coffeeBeans from './coffee_beans.png'
+import coffeeLeaves from './coffee_leaves.png'
 
 const assets = {
     logo,
@@ -32,7 +35,10 @@ const assets = {
     starCoffeeBeans,
     truckDelivery,
     testimonialPlaceHolder,
-    double
+    double,
+    coffeeBeans,
+    coffeeBeansBag,
+    coffeeLeaves
 }
 
 export default assets;

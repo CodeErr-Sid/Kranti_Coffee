@@ -6,6 +6,7 @@ import Process from '../../Components/Process/Process'
 import Sourcing from '../../Components/Sourcing/Sourcing'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 import assets from '../../assets/assets'
+import LineSection from '../../Components/LineSection/LineSection'
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                 bannerBackgroundImage={assets.bannerBg}
             />
             <Process />
-            <Sourcing />
+            <LineSection />
             <Testimonials />
             <Banner
                 bannerHeading="Enjoy our exotic coffee in diverse brews"

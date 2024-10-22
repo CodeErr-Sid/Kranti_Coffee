@@ -1,0 +1,11 @@
+/* TestimonialCarousel.css */
+
+@media (max-width: 500px) {
+    .profile-button {
+      display: none; /* Hide all profile buttons by default */
+    }
+    .profile-button.active {
+      display: block; /* Show only the active (center) profile */
+    }
+  }
+  

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Star } from 'lucide-react';
 import assets from '../../assets/assets'
+import './Testimonials.css'
 
 const testimonials = [
   {
