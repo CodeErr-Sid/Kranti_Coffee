@@ -12,48 +12,41 @@ const Features = () => {
   const secondHalf = FeaturesData.slice(halfIndex);
 
   return (
-    <section className="features-section bg-white min-h-screen flex items-center px-6 sm:px-8 md:px-16">
-      <div className="container mx-auto flex flex-col py-4 md:flex-row items-center">
+    <section className="features-section relative bg-white flex items-center px-6 sm:px-8 md:px-16 overflow-hidden">
+      <div className="container mx-auto flex flex-col py-4 md:flex-row items-center relative z-30">
 
         {/* First Half Features */}
-        <div className="flex flex-col gap-4 p-2">
+        <div className="flex flex-col gap-4 p-2 flex-[2]">
           {firstHalf.map((feature, index) => (
             <Feature
               key={index}
               featureHeading={feature.featureHeading}
               featureContent={feature.featureContent}
               featureIcon={feature.featureIcon}
+              alignMent="left"
             />
           ))}
         </div>
 
         {/* Center Image Section */}
-        <div className="relative">
-          <img
-            className="absolute bottom-16 left-[-30px] z-10 h-3/4"
-            src={assets.coffeePacket}
-            alt="Coffee Packet"
-          />
-          <img className="relative z-20" src={assets.coffeePacket} alt="Coffee Packet" />
-          <img
-            className="absolute bottom-16 right-[-30px] z-10 h-3/4"
-            src={assets.coffeePacket}
-            alt="Coffee Packet"
-          />
+        <div className="relative flex-[1]">
+          <img className="relative z-20" src={assets.coffeePacketSlab} alt="Coffee Packet" />
         </div>
 
         {/* Second Half Features */}
-        <div className="flex flex-col gap-4 p-2">
+        <div className="flex flex-col gap-4 p-2 flex-[2]">
           {secondHalf.map((feature, index) => (
             <Feature
               key={index + halfIndex}
               featureHeading={feature.featureHeading}
               featureContent={feature.featureContent}
               featureIcon={feature.featureIcon}
+              alignMent="right"
             />
           ))}
         </div>
       </div>
+      <img src={assets.coffeeBeansFalling} className='absolute right-0 z-0 w-1/2' alt="" />
     </section>
   );
 };

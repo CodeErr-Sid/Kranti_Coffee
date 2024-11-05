@@ -4,6 +4,10 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    'text-primary', 'text-secondary', 'text-accent', 'text-dark',
+    'bg-primary', 'bg-secondary', 'bg-accent', 'bg-dark' // add any other widths you may use
+  ],
   theme: {
     extend: {
       fontFamily: {
@@ -20,6 +24,9 @@ export default {
       },
       backgroundImage: {
         'gradient-to-right': "linear-gradient(90deg, #572300 0%, #402716 100%)",
+      },
+      dropShadow: {
+        'custom': '2px 4px 6px black',
       },
     },
   },

@@ -2,15 +2,15 @@ import React from 'react'
 import CallToAction from '../CallToAction/CallToAction';
 import assets from '../../assets/assets'
 
-const Banner = ({ bannerHeading, bannerContent, bannerButtonContent, bannerBackgroundImage }) => {
+const Banner = ({ bannerHeading, bannerContent, bannerButtonContent, bannerBackgroundImage, isButtonAvailable = true }) => {
   return (
     <section
-      className="features-section bg-accent bg-contain bg-no-repeat bg-center flex items-center px-6 sm:px-8 md:px-16"
+      className="features-section bg-black bg-cover bg-no-repeat bg-center flex items-center py-32 px-6 sm:px-8 md:px-16"
       style={{ backgroundImage: `url('${bannerBackgroundImage}')` }}
     >
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 text-center py-12">
         <h1
-          className='text-secondary font-tanAegan text-5xl uppercase'
+          className='text-secondary font-tanAegan text-5xl uppercase w-4/5'
           style={{ lineHeight: "102px" }}
         >
           {bannerHeading}
@@ -21,14 +21,15 @@ const Banner = ({ bannerHeading, bannerContent, bannerButtonContent, bannerBackg
         >
           {bannerContent}
         </p>
-        <div className="w-full md:w-1/2">
-          <CallToAction
-            bgColor='white'
-            fontColor='dark'
-            content={bannerButtonContent}
-            widthRatio="1/2"
-          />
-        </div>
+        {isButtonAvailable &&
+          (<div className="w-full md:w-1/2">
+            <CallToAction
+              bgColor='white'
+              fontColor='dark'
+              content={bannerButtonContent}
+            />
+          </div>)
+        }
       </div>
     </section>
   )

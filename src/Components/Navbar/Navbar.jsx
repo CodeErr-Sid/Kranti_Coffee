@@ -45,7 +45,7 @@ export function NavbarWithSimpleLinks() {
 
   console.log(open)
   return (
-    <Navbar color="transparent" className="bg-primary p-0 sticky top-0 z-50" fullWidth>
+    <Navbar color="transparent" className="bg-primary p-0 fixed top-0 z-50" fullWidth>
       <div className="container mx-auto flex items-center justify-between gap-8 text-blue-gray-900 p-5">
         <img src={assets.logo} className="w-1/5 lg:w-2/12" alt="" />
         <div className="hidden lg:block flex-1">

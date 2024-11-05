@@ -6,12 +6,31 @@ import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa'
 const Footer = () => {
   return (
     <section className="features-section bg-primary flex items-center py-12 px-6 sm:px-8 md:px-16">
-      <div className="container flex flex-row items-center justify-between gap-4">
+      <div className="container flex flex-row items-center justify-around">
         <div className="logo-section w-1/5">
           <img src={assets.logo} alt="" />
         </div>
-        <div className="navlinks flex-1">
-          <ul className='md:ml-8 text-secondary font-monteserrat font-semibold flex flex-col gap-2'>
+        <div className="navlinks">
+          <ul className='md:ml-8 text-secondary text-xl font-monteserrat font-semibold flex flex-col gap-2'>
+            <a href="#">
+              <li className="capitalize">About</li>
+            </a>
+            <a href="#">
+              <li className="capitalize">People Services</li>
+            </a>
+            <a href="#">
+              <li className="capitalize">Process Services</li>
+            </a>
+            <a href="#">
+              <li className="capitalize">Tech Solutions</li>
+            </a>
+            <a href="#">
+              <li className="capitalize">Contact us</li>
+            </a>
+          </ul>
+        </div>
+        <div className="navlinks">
+          <ul className='md:ml-8 text-secondary text-xl font-monteserrat font-semibold flex flex-col gap-2'>
             <a href="#">
               <li className="capitalize">About</li>
             </a>

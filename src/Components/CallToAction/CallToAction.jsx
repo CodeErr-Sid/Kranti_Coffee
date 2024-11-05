@@ -1,9 +1,9 @@
 import { Button } from '@material-tailwind/react'
 import React from 'react'
 
-const CallToAction = ({ content, bgColor, fontColor, widthRatio }) => {
+const CallToAction = ({ content, bgColor, fontColor }) => {
   return (
-    <Button variant='outlined' className={`w-full md:w-${widthRatio} bg-${bgColor} text-${fontColor} font-tanAegan font-normal py-4`}>
+    <Button variant='outlined' className={`w-full text-accent text-xl bg-${bgColor} md:min-w-[367px] md:w-fit  font-tanAegan font-normal py-6`}>
       {content}
     </Button>
   )
