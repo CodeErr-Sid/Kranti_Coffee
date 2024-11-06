@@ -27,7 +27,7 @@ const coffeeFeatures = [
 const Process = () => {
   return (
     <section className="features-section bg-primary text-secondary flex items-center px-6 sm:px-8 md:px-16">
-      <div className="container mx-auto flex flex-col py-8 md:flex-row items-center">
+      <div className="container mx-auto flex flex-col gap-4 lg:gap-0 py-8 md:flex-row items-center">
         {
           coffeeFeatures && coffeeFeatures.map((item, index) => (
             <div

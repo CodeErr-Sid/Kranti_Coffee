@@ -1,6 +1,6 @@
 /* TestimonialCarousel.css */
 
-@media (max-width: 500px) {
+@media (max-width: 800px) {
     .profile-button {
       display: none; /* Hide all profile buttons by default */
     }

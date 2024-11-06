@@ -140,8 +140,7 @@ const TestimonialCarousel = () => {
       <div className="container py-14">
         <div className="w-4/5 mx-auto">
           <h1 className="text-center text-2xl uppercase text-secondary font-tanAegan font-normal">What Our Client Says</h1>
-
-          <div className="relative h-[500px]">
+          <div className="relative h-[400px] md:h-[540px] lg:h-[500px]">
             <div className="absolute inset-0 h-2/3 -top-20">
               {profiles.map((profile, index) => (
                 <button
@@ -164,14 +163,14 @@ const TestimonialCarousel = () => {
 
             <div className="absolute top-14 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
               <img src={assets.double} alt='' className='w-10 h-10 md:w-16 md:h-16 absolute -top-10 -left-2 md:-left-6' />
-              <div className="bg-white rounded-lg shadow-md p-6 pt-16 transition-all duration-300">
+              <div className="bg-white rounded-lg shadow-md p-2 lg:p-6 lg:pt-16 transition-all duration-300">
                 <div className="relative text-center mb-4">
-                  <blockquote className="text-lg  px-8">
+                  <blockquote className="text-base lg:text-lg px-2  lg:px-8">
                     {profiles[activeIndex]?.quote}
                   </blockquote>
                 </div>
                 <div className="text-center">
-                  <h3 className="uppercase text-2xl font-tanAegan font-normal">{profiles[activeIndex]?.name}</h3>
+                  <h3 className="uppercase text-xl lg:text-2xl font-tanAegan font-normal">{profiles[activeIndex]?.name}</h3>
                   {/* <p className="text-gray-600">{profiles[activeIndex]?.role}</p> */}
                   {/* <div className="flex justify-center mt-2">
                     {[...Array(5)].map((_, i) => (
@@ -193,3 +192,5 @@ const TestimonialCarousel = () => {
 };
 
 export default TestimonialCarousel;
+
+

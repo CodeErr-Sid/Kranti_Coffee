@@ -6,7 +6,7 @@ import { Filter } from 'lucide-react'
 const Hero = () => {
   return (
     <section
-      className="text-secondary min-h-[87vh] flex items-center px-6 sm:px-8 md:px-16 bg-no-repeat bg-contain bg-bottom drop-shadow-custom"
+      className="text-secondary lg:mt-8 min-h-svh lg:min-h-[87vh] flex items-center px-6 sm:px-8 md:px-16 bg-no-repeat bg-cover bg-bottom drop-shadow-custom"
       style={{ backgroundImage: `url("${assets.krantiHeroBg}")` }}
     >
       <div className="container mx-auto flex flex-col md:flex-row items-center">
@@ -21,7 +21,7 @@ const Hero = () => {
           >
             Start Your Day Right with a Perfect Cup
           </h1>
-          <p className="font-quickSand font-medium text-sm sm:text-base md:text-lg w-full sm:w-11/12">
+          <p className="font-quickSand font-medium text-sm sm:text-base w-full">
             Experience the bold, authentic flavors of our premium coffee, carefully sourced from the finest farms. Every sip brings you closer to nature’s finest harvest.
           </p>
           <CallToAction
