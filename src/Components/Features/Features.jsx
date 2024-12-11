@@ -29,9 +29,9 @@ const Features = () => {
         </div>
 
         {/* Center Image Section */}
-        <div className="relative flex-[1] order-1 lg:order-2">
+        {/* <div className="relative flex-[1] order-1 lg:order-2">
           <img className="relative z-20" src={assets.coffeePacketSlab} alt="Coffee Packet" />
-        </div>
+        </div> */}
 
         {/* Second Half Features */}
         <div className="flex flex-col gap-4 p-2 flex-[2] order-3 lg:order-3">

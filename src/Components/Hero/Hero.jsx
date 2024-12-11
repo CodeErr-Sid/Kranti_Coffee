@@ -12,9 +12,9 @@ const Hero = () => {
       <div className="container mx-auto flex flex-col md:flex-row items-center">
         {/* Left Content */}
         <div className="text-left md:text-left md:w-1/2 space-y-4 sm:space-y-6">
-          <p className="font-semibold w-11/12 font-quickSand text-sm sm:text-base">
+          {/* <p className="font-semibold w-11/12 font-quickSand text-sm sm:text-base">
             lorem ipsum
-          </p>
+          </p> */}
           <h1
             className="font-tanAegan font-normal text-4xl uppercase"
             style={{ lineHeight: "76px" }}
