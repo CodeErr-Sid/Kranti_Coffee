@@ -6,10 +6,10 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { title: "Home", id: "home" },
-    { title: "About", id: "about" },
-    { title: "Plans", id: "plans" },
-    { title: "Testimonials", id: "testimonials" },
+    { title: "About", id: "home" },
+    { title: "Our Speciality", id: "plans" },
+    { title: "Our Sourcing", id: "about" },
+    { title: "Contact", id: "testimonials" },
   ];
 
   const toggleMenu = () => {
