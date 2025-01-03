@@ -56,3 +56,13 @@ body {
     font-size: 16px;
     overflow-x: hidden;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+.swiper-pagination-bullet{
+    width: 25px!important;
+    height: 25px!important;
+    background-color: white!important;
+}

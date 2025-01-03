@@ -3,6 +3,8 @@ import coffeePacket from './coffee-packet.png'
 
 import krantiHero from './Kranti_Hero_image.svg'
 import krantiHeroBg from './kranti_hero_bg.png'
+import hero2 from './hero-2.png'
+import hero3 from './hero-3.png'
 
 import coffeePacketSlab from './kranti-barbara-honey-sundried.png'
 import coffeeBeansFalling from './coffee-beans-falling.png'
@@ -30,12 +32,26 @@ import coffeeBeansBag from './coffee_ beans_bag.png';
 import coffeeBeans from './coffee_beans.png'
 import coffeeLeaves from './coffee_leaves.png'
 
+import coffeeSplash from './coffee-splash.png'
+import fourHandles from './four-handles.png'
+import coffeeTopView from './coffee-top-view.png'
+import coffeePowerSpilled from './coffee-powder.png'
+import coffeeBeanShovel from './coffee-bean-shovel.png'
+import naturalSoil from './natural-soil.png'
+
 const assets = {
+    coffeeTopView,
+    coffeePowerSpilled,
+    coffeeBeanShovel,
+    naturalSoil,
+
     logo,
     coffeePacket,
     coffeePacketSlab,
     coffeeBeansFalling,
     krantiHero,
+    hero2,
+    hero3,
     krantiHeroBg,
     feature_ad,
     feature_aq,
@@ -54,7 +70,9 @@ const assets = {
     double,
     coffeeBeans,
     coffeeBeansBag,
-    coffeeLeaves
+    coffeeLeaves,
+    coffeeSplash,
+    fourHandles,
 }
 
 export default assets;

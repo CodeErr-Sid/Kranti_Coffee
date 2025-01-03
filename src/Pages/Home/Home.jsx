@@ -7,11 +7,14 @@ import Sourcing from '../../Components/Sourcing/Sourcing'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 import assets from '../../assets/assets'
 import LineSection from '../../Components/LineSection/LineSection'
+import { slidesContent } from '../../data/Hero'
 
 const Home = () => {
     return (
         <section className='w-full h-full'>
-            <Hero />
+            <Hero
+                slides={slidesContent}
+            />
             <Features />
             <Banner
                 bannerHeading="Your Coffee Is on the House"

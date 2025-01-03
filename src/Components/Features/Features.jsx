@@ -12,11 +12,11 @@ const Features = () => {
   const secondHalf = FeaturesData.slice(halfIndex);
 
   return (
-    <section className="features-section relative bg-white flex items-center px-6 sm:px-8 md:px-16 overflow-hidden">
+    <section className="features-section relative bg-white flex items-center px-6 overflow-hidden">
       <div className="container mx-auto flex flex-col py-4 lg:flex-row items-center relative z-30">
 
         {/* First Half Features */}
-        <div className="flex flex-col gap-4 p-2 flex-[2] order-2 lg:order-1">
+        <div className="flex flex-col gap-4 p-2 flex-[2]">
           {firstHalf.map((feature, index) => (
             <Feature
               key={index}
@@ -29,12 +29,12 @@ const Features = () => {
         </div>
 
         {/* Center Image Section */}
-        {/* <div className="relative flex-[1] order-1 lg:order-2">
-          <img className="relative z-20" src={assets.coffeePacketSlab} alt="Coffee Packet" />
-        </div> */}
+        <div className="relative flex-[2]">
+          <img className="relative z-20" src={assets.coffeeSplash} alt="Coffee Cup Splash" />
+        </div>
 
         {/* Second Half Features */}
-        <div className="flex flex-col gap-4 p-2 flex-[2] order-3 lg:order-3">
+        <div className="flex flex-col gap-4 p-2 flex-[2]">
           {secondHalf.map((feature, index) => (
             <Feature
               key={index + halfIndex}
@@ -46,9 +46,9 @@ const Features = () => {
           ))}
         </div>
       </div>
-      <img src={assets.coffeeBeansFalling} className='absolute right-0 z-0 w-1/2' alt="" />
     </section>
   );
 };
 
 export default Features;
+

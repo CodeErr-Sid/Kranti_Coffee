@@ -5,7 +5,7 @@ import assets from '../../assets/assets'
 const Banner = ({ bannerHeading, bannerContent, bannerButtonContent, bannerBackgroundImage, isButtonAvailable = true }) => {
   return (
     <section
-      className="features-section bg-black bg-cover bg-no-repeat bg-center flex items-center px-6 sm:px-8 md:px-16"
+      className="features-section bg-black bg-cover bg-no-repeat bg-center flex items-center px-6 sm:px-8 md:p-16"
       style={{ backgroundImage: `url('${bannerBackgroundImage}')` }}
     >
       <div className="container mx-auto flex flex-col justify-center items-center gap-8 text-center py-12">

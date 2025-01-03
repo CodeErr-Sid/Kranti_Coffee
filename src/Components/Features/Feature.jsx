@@ -17,7 +17,7 @@ const Feature = ({ featureHeading, featureContent, featureIcon, alignMent }) => 
     }
 
     return (
-        <div className={`flex flex-${flexDirection} gap-4 items-center justify-around bg-primary text-secondary rounded-lg p-4`}>
+        <div className={`flex flex-row-reverse lg:flex-${flexDirection} gap-4 items-center justify-around bg-primary text-secondary rounded-lg p-4`}>
             <div className={`text-right lg:text-${alignMent == "left" ? "right" : "left"} flex flex-col gap-4`}>
                 <h1 className='font-tanAegan font-normal text-lg capitalize'>{featureHeading}</h1>
                 <p className='font-quickSand font-normal text-base'>{featureContent}</p>

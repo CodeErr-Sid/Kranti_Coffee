@@ -1,118 +1,97 @@
-import React from "react";
-
-import { useEffect, useState } from "react";
-import {
-  Navbar,
-  Collapse,
-  Typography,
-  Button,
-  IconButton,
-} from "@material-tailwind/react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import React, { useState } from "react";
 import assets from "../../assets/assets";
 
-function NavItem({ label, theme }) {
-  return (
-    <a href="#">
-      <Typography as="li" color="blue-gray" className={`p-1 uppercase font-semibold font-quickSand text-${theme}`}>
-        {label}
-      </Typography>
-    </a>
-  );
-}
 
-function NavList({ theme }) {
-  return (
-    <ul className="mb-4 mt-2  flex flex-col gap-3 lg:justify-end lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-8">
-      <NavItem theme={theme} label="About" />
-      <NavItem theme={theme} label="Our Speciality" />
-      <NavItem theme={theme} label="Sourcing" />
-      <NavItem theme={theme} label="Contact" />
-    </ul>
-  );
-}
+const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-export function NavbarWithSimpleLinks() {
-  const [open, setOpen] = useState(false);
-  const handleOpen = () => setOpen((cur) => !cur);
+  const navLinks = [
+    { title: "Home", id: "home" },
+    { title: "About", id: "about" },
+    { title: "Plans", id: "plans" },
+    { title: "Testimonials", id: "testimonials" },
+  ];
 
-  useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpen(false)
-    );
-  }, []);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-  console.log(open)
+  // Function to scroll to the specific section
+  const handleScroll = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setIsMenuOpen(false); // Close menu after clicking
+  };
+
   return (
     <>
-      <Navbar color="transparent" className="bg-primary p-0 fixed top-0 z-50" fullWidth>
-        <div className="container mx-auto flex items-center justify-between gap-8 text-blue-gray-900 p-5">
-          <img src={assets.logo} className="w-1/5 lg:w-2/12" alt="" />
-          <div className="hidden lg:block flex-1">
-            <NavList theme="secondary" />
+      <nav
+        className={`transition-[background] bg-primary shadow-md duration-500 ease-in-out fixed w-full z-50 top-0 start-0 border-none`}
+      >
+        <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <div className="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src={assets.logo}
+              alt="Logo"
+              width={133}
+              height={43}
+              className="h-8"
+            />
           </div>
-          <Button color="gray" className="hidden lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
-            Order Now
-          </Button>
-          <IconButton
-            size="sm"
-            variant="text"
-            color="blue-gray"
-            onClick={handleOpen}
-            className="ml-auto inline-block text-blue-gray-900 lg:hidden"
-          >
-            {open ? (
-              <XMarkIcon className="h-6 w-6 text-secondary" strokeWidth={2} />
-            ) : (
-              <Bars3Icon className="h-6 w-6 text-secondary" strokeWidth={2} />
-            )}
-          </IconButton>
-        </div>
-        {open && <Collapse open={open}>
-          <div className="mt-2 rounded-xl bg-white py-2">
-            <NavList theme="dark" />
-            <Button className="mb-2 bg-accent text-secondary font-tanAegan font-normal" fullWidth>
+          <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+            <button color="gray" className="hidden uppercase rounded-lg lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
               Order Now
-            </Button>
+            </button>
+
+            <button
+              onClick={toggleMenu}
+              type="button"
+              className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded={isMenuOpen ? "true" : "false"}
+            >
+              <span className="sr-only">Open main menu</span>
+              <svg
+                className="w-5 h-5"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 17 14"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1h15M1 7h15M1 13h15"
+                />
+              </svg>
+            </button>
           </div>
-        </Collapse>}
-      </Navbar>
-      <Navbar color="transparent" className="bg-primary p-0 relative top-0 z-49" fullWidth>
-        <div className="container mx-auto flex items-center justify-between gap-8 text-blue-gray-900 p-5">
-          <img src={assets.logo} className="w-1/5 lg:w-2/12" alt="" />
-          <div className="hidden lg:block flex-1">
-            <NavList theme="secondary" />
-          </div>
-          <Button color="gray" className="hidden lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
-            Order Now
-          </Button>
-          <IconButton
-            size="sm"
-            variant="text"
-            color="blue-gray"
-            // onClick={handleOpen}
-            className="ml-auto inline-block text-blue-gray-900 lg:hidden"
+          <div
+            className={`transition-all duration-500 ease-in-out transform md:transition-none ${isMenuOpen
+              ? "max-h-screen translate-y-0 opacity-100"
+              : "max-h-0 -translate-y-10 opacity-0"
+              } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}
+            id="navbar-sticky"
           >
-            {open ? (
-              <XMarkIcon className="h-6 w-6 text-secondary" strokeWidth={2} />
-            ) : (
-              <Bars3Icon className="h-6 w-6 text-secondary" strokeWidth={2} />
-            )}
-          </IconButton>
-        </div>
-        {/* {open && <Collapse open={open}>
-          <div className="mt-2 rounded-xl bg-white py-2">
-            <NavList theme="dark" />
-            <Button className="mb-2 bg-accent text-secondary font-tanAegan font-normal" fullWidth>
-              Order Now
-            </Button>
+            <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium bg-transparent rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+              {navLinks.map(({ title, id }) => (
+                <li key={id}>
+                  <button
+                    onClick={() => handleScroll(id)}
+                    className="transito-all duration-500 ease-in-out capitalize block py-2 px-3 rounded text-white md:bg-transparent md:p-0 hover:-translate-y-2"
+                  >
+                    {title}
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
-        </Collapse>} */}
-      </Navbar>
+        </div>
+      </nav>
     </>
-
   );
-}
+};
 
-export default NavbarWithSimpleLinks;
+export default Navbar;
+
