@@ -17,6 +17,8 @@
   position: relative;
 }
 
+
+
 .verticalLine {
   width: 3px;
   height: 100%;
@@ -130,4 +132,25 @@
 .lineContent {
   flex-grow: 1;
   background-color: #ffffff;
+}
+
+
+@media screen and (0 < width < 768px) {
+  .lineSection {
+    width: 100%;
+  }
+
+  .segment {
+    width: 100%;
+  }
+
+  .stickyHeader {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .lineContent {
+    font-size: 16px;
+  }
 }
