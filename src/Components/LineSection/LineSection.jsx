@@ -1,13 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './LineSection.module.css'; // Import CSS Module
 import assets from '../../assets/assets';
-import { CiLocationOn } from "react-icons/ci";
 
-
-const LineSection = () => {
+const LineSection = ({ contentArray }) => {
     const childLineRef = useRef(null);
     const lineSectionRef = useRef(null);
-    const [ballStates, setBallStates] = useState([false, false, false, false]);
+    const [ballStates, setBallStates] = useState(contentArray.map(() => false));
 
     const updateLineProgress = () => {
         const rect = lineSectionRef.current.getBoundingClientRect();
@@ -42,49 +40,66 @@ const LineSection = () => {
             setBallStates(newBallStates);
         } else {
             if (childLineRef.current) childLineRef.current.style.height = '0%';
-            setBallStates([false, false, false, false]);
+            setBallStates(contentArray.map(() => false));
         }
     };
 
     useEffect(() => {
         window.addEventListener('scroll', updateLineProgress);
         return () => window.removeEventListener('scroll', updateLineProgress);
-    }, []);
+    }, [contentArray]);
 
     return (
-        <div className='relative'>
+        <div className='relative min-h-[400vh]'>
             <h1 className="uppercase font-tanAegan font-normal text-2xl text-center pt-24 pb-4">our Sourcing</h1>
+
+            <div className='w-1/3 mx-auto mb-4'>
+                <img src={assets.fourHandles} alt="" />
+            </div>
+
             <section className={styles.lineSection} ref={lineSectionRef}>
+
+                {/* single coffee bean */}
+                <img src={assets.coffeeBean} className='absolute -top-12 w-16 z-[4]' alt="" />
+
+
                 <div className={styles.verticalLine}>
                     <div className={styles.childLine} ref={childLineRef}></div>
                 </div>
 
-                {[1, 2, 3, 4, 5].map((_, index) => (
+                {contentArray.map((item, index) => (
                     <div className={styles.segment} key={index}>
                         <div className={styles.leftContent}>
-                            <div className={styles.stickyHeader}>
-                                <div className='bg-white p-2 rounded-sm' >
-                                <CiLocationOn color='#114030' />
+                            <div className={styles.stickyBox}>
+                                <div className={styles.stickyHeader}>
+                                    <div className='bg-white p-2 rounded-sm' >
+                                        <img src={item.icon} alt="" className='w-[30px] h-[30px]' />
+                                    </div>
+                                    <h1 className='bg-primary text-center font-tanAegan text-secondary font-normal text-sm flex-1'>{item.title}</h1>
                                 </div>
-                                <h1 className='bg-primary text-end text-secondary font-quickSand font-semibold text-xl flex-1'>{`Line${index + 1}`}</h1>
+                                <div className={styles.lineContent}>
+                                    {item.content}
+                                </div>
+
                             </div>
-                            <div className={styles.lineContent}></div>
                         </div>
                         <div className={styles.center}>
                             <div
                                 className={`${styles.ball} ${ballStates[index] ? styles.active : ''}`}
                             ></div>
                         </div>
-                        <div className={styles.rightContent}>{`Right Content ${index + 1}`}</div>
+                        <div className={styles.rightContent}></div> {/* Hidden placeholder */}
                     </div>
                 ))}
-
             </section>
-
-            <div className='w-1/3 absolute top-0 left-0'><img src={assets.coffeeLeaves} alt="" /></div>
-            <div className='w-1/5 absolute top-[8%] right-[6%]'><img src={assets.coffeeBeans} alt="" /></div>
-            <div className='w-1/5 absolute bottom-[8%] left-[6%]'><img src={assets.coffeeBeans} alt="" /></div>
-            <div className='w-1/3 absolute bottom-0 right-[3%]'><img src={assets.coffeeBeansBag} alt="" /></div>
+            {/* coffeepowder */}
+            <img src={assets.coffeePowerSpilled} className='absolute top-[23rem] w-1/3 right-0' alt="" />
+            {/* coffeetopview */}
+            <img src={assets.coffeeTopView} className='absolute top-[43rem] w-1/4 left-0' alt="" />
+            {/* cofeebeanshovel */}
+            <img src={assets.coffeeBeanShovel} className='absolute top-[93rem] w-1/3 right-0' alt="" />
+            {/* sand */}
+            <img src={assets.naturalSoil} className='w-full absolute bottom-0 z-[3]' alt="" />
         </div>
     );
 };

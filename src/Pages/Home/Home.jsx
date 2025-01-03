@@ -8,6 +8,7 @@ import Testimonials from '../../Components/Testimonials/Testimonials'
 import assets from '../../assets/assets'
 import LineSection from '../../Components/LineSection/LineSection'
 import { slidesContent } from '../../data/Hero'
+import { content } from '../../data/VerticalSlider'
 
 const Home = () => {
     return (
@@ -30,7 +31,7 @@ const Home = () => {
                 isButtonAvailable={false}
                 bannerBackgroundImage={assets.coffeeCupBg}
             />
-            <LineSection />
+            <LineSection contentArray={content} />
             <Testimonials />
             <Banner
                 bannerHeading="Enjoy our exotic coffee in diverse brews"

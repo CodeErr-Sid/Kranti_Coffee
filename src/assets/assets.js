@@ -39,12 +39,28 @@ import coffeePowerSpilled from './coffee-powder.png'
 import coffeeBeanShovel from './coffee-bean-shovel.png'
 import naturalSoil from './natural-soil.png'
 
+
+import sourcing1 from './sourcing1.png'
+import sourcing2 from './sourcing2.png'
+import sourcing3 from './sourcing3.png'
+import sourcing4 from './sourcing4.png'
+import sourcing5 from './sourcing5.png'
+import sourcing6 from './sourcing6.png'
+
+import coffeeBean from './singlecoffeebean.png'
+
 const assets = {
     coffeeTopView,
     coffeePowerSpilled,
     coffeeBeanShovel,
     naturalSoil,
-
+    sourcing1,
+    sourcing2,
+    sourcing3,
+    sourcing4,
+    sourcing5,
+    sourcing6,
+    coffeeBean,
     logo,
     coffeePacket,
     coffeePacketSlab,
