@@ -15,6 +15,7 @@
   width: 70%;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 17rem;
 }
 
 
@@ -134,6 +135,12 @@
   background-color: #ffffff;
 }
 
+
+@media screen and (0 <= width <=425px) {
+  .lineSection {
+    margin-bottom: 6rem;
+  }
+}
 
 @media screen and (0 < width < 768px) {
   .lineSection {

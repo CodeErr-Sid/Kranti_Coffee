@@ -30,13 +30,8 @@ const content = [
     title: "Soil and Harvesting",
     content: "Maintaining soil health and careful cherry harvesting to ensure quality and preserve culture.",
     icon: assets.sourcing6
-  },
-  {
-    title: "Soil and Harvesting",
-    content: "Maintaining soil health and careful cherry harvesting to ensure quality and preserve culture.",
-    icon: assets.sourcing6
-  },
-  
+  }
+
 ];
 
 

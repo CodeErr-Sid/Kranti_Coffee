@@ -97,7 +97,7 @@ const LineSection = ({ contentArray }) => {
             {/* coffeetopview */}
             <img src={assets.coffeeTopView} className='absolute top-[43rem] w-1/4 left-0' alt="" />
             {/* cofeebeanshovel */}
-            <img src={assets.coffeeBeanShovel} className='absolute top-[93rem] w-1/3 right-0' alt="" />
+            <img src={assets.coffeeBeanShovel} className='absolute top-[106rem] w-1/3 right-0' alt="" />
             {/* sand */}
             <img src={assets.naturalSoil} className='w-full absolute bottom-0 z-[3]' alt="" />
         </div>
