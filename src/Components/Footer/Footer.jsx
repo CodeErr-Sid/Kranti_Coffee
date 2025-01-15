@@ -37,7 +37,7 @@ const Footer = () => {
         />
         <div className='flex flex-row gap-2 font-semibold font-monteserrat text-white text-xl'>
           <FaLocationPin />
-          <a href="https://maps.app.goo.gl/n5CWr8zzUfTZSd3R8">
+          <a target="_blank" href="https://maps.app.goo.gl/n5CWr8zzUfTZSd3R8">
             <p>
               {address}
             </p>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-row gap-2 font-semibold font-monteserrat text-white text-xl'>
           <FaPhone />
-          <a href={`tel:${phoneNumber}`}>
+          <a target="_blank" href={`tel:${phoneNumber}`}>
             <p>
               {phoneNumber}
             </p>
