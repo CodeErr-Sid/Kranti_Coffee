@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import assets from '../../data/assets.js';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -38,9 +39,11 @@ const Navbar = () => {
             />
           </div>
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-            <button color="gray" className="hidden uppercase rounded-lg lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
-              Order Now
-            </button>
+            <Link to='/product'>
+              <button color="gray" className="hidden uppercase rounded-lg lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
+                Order Now
+              </button>
+            </Link>
 
             <button
               onClick={toggleMenu}
