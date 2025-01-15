@@ -1,6 +1,5 @@
 import React from 'react'
 import CallToAction from '../CallToAction/CallToAction';
-import assets from '../../assets/assets'
 
 const Banner = ({ bannerHeading, bannerContent, bannerButtonContent, bannerBackgroundImage, isButtonAvailable = true }) => {
   return (

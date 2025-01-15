@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './LineSection.module.css'; // Import CSS Module
-import assets from '../../assets/assets';
+import assets from '../../data/assets.js';
+
 
 const LineSection = ({ contentArray }) => {
     const childLineRef = useRef(null);

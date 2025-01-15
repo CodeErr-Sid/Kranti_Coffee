@@ -1,5 +1,5 @@
 import React from 'react'
-import assets from '../../assets/assets'
+import assets from '../../data/assets.js';
 import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 

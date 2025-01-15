@@ -1,4 +1,6 @@
-import assets from "../assets/assets";
+import assets from "./assets";
+
+
 
 const slidesContent = [
     {
