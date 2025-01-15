@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import styles from './LineSection.module.css'; // Import CSS Module
 import assets from '../../data/assets.js';
-
+import { motion } from 'framer-motion'
 
 const LineSection = ({ contentArray }) => {
     const childLineRef = useRef(null);
@@ -50,6 +50,27 @@ const LineSection = ({ contentArray }) => {
         return () => window.removeEventListener('scroll', updateLineProgress);
     }, [contentArray]);
 
+    // Intersection Observer to trigger animations on visibility
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                const contentElement = entry.target;
+                if (entry.isIntersecting) {
+                    // When element is visible, add animation class
+                    contentElement.classList.add(styles.visible);
+                } else {
+                    // Reset animations when not visible
+                    contentElement.classList.remove(styles.visible);
+                }
+            });
+        }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
+
+        const elements = document.querySelectorAll(`.${styles.leftContent}`);
+        elements.forEach(element => observer.observe(element));
+
+        return () => observer.disconnect(); // Cleanup on unmount
+    }, []);
+
     return (
         <div className='relative min-h-[400vh] overflow-hidden'>
             <h1 className="uppercase font-tanAegan font-normal text-2xl text-center pt-24 pb-4">our Sourcing</h1>
@@ -59,10 +80,7 @@ const LineSection = ({ contentArray }) => {
             </div>
 
             <section className={styles.lineSection} ref={lineSectionRef}>
-
-                {/* single coffee bean */}
                 <img src={assets.coffeeBean} className='absolute -top-12 w-16 z-[4]' alt="" />
-
 
                 <div className={styles.verticalLine}>
                     <div className={styles.childLine} ref={childLineRef}></div>
@@ -73,7 +91,7 @@ const LineSection = ({ contentArray }) => {
                         <div className={styles.leftContent}>
                             <div className={styles.stickyBox}>
                                 <div className={styles.stickyHeader}>
-                                    <div className='bg-white p-2 rounded-sm' >
+                                    <div className='bg-white p-2 rounded-sm'>
                                         <img src={item.icon} alt="" className='w-[30px] h-[30px]' />
                                     </div>
                                     <h1 className='bg-primary text-center font-tanAegan text-secondary font-normal text-xs leading-1 lg:text-sm flex-1'>{item.title}</h1>
@@ -81,7 +99,6 @@ const LineSection = ({ contentArray }) => {
                                 <div className={styles.lineContent}>
                                     {item.content}
                                 </div>
-
                             </div>
                         </div>
                         <div className={styles.center}>
@@ -89,17 +106,27 @@ const LineSection = ({ contentArray }) => {
                                 className={`${styles.ball} ${ballStates[index] ? styles.active : ''}`}
                             ></div>
                         </div>
-                        <div className={styles.rightContent}></div> {/* Hidden placeholder */}
+                        <div className={styles.rightContent}></div>
                     </div>
                 ))}
             </section>
-            {/* coffeepowder */}
+
             <img src={assets.coffeePowerSpilled} className='absolute top-[23rem] w-1/3 right-0' alt="" />
-            {/* coffeetopview */}
-            <img src={assets.coffeeTopView} className='absolute top-[43rem] w-1/4 left-0' alt="" />
-            {/* cofeebeanshovel */}
+            <motion.img
+                src={assets.coffeeTopView}
+                className="absolute top-[43rem] w-1/4 left-0"
+                alt=""
+                animate={{
+                    rotate: 360, // Rotate 360 degrees
+                }}
+                transition={{
+                    repeat: Infinity, // Infinite loop
+                    repeatType: 'loop', // Loop the animation
+                    duration: 10, // Adjust duration for speed of rotation
+                    ease: 'linear', // Continuous, smooth animation
+                }}
+            />
             <img src={assets.coffeeBeanShovel} className='absolute top-[106rem] w-1/3 right-0' alt="" />
-            {/* sand */}
             <img src={assets.naturalSoil} className='w-full absolute bottom-0 z-[3]' alt="" />
         </div>
     );
