@@ -1,17 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import assets from "../../data/assets";
 import { FaMinus, FaPlus, FaStar } from "react-icons/fa";
 import { FaBagShopping } from "react-icons/fa6";
-import styles from './product.module.css'
+import StepComponent from "./StepComponent";
 
 const ProductCard = () => {
-  const [quantity, setQuantity] = useState(1);
 
   return (
-    <section className="flex justify-center items-center min-h-screen">
-      <div className="flex w-[80%] bg-white rounded-lg overflow-hidden">
+    <section className="flex justify-center items-center min-h-screen p-4">
+      <div className="flex flex-col lg:flex-row w-[90%] bg-white gap-4 rounded-lg overflow-hidden">
         {/* Left Section: Image */}
-        <div className="w-1/2 bg-[#F9FAFC]">
+        <div className="w-full lg:w-1/2 bg-[#F9FAFC]">
           <img loading="lazy"
             src={assets.coffeePacketSlab}
             alt="Product"
@@ -20,7 +19,7 @@ const ProductCard = () => {
         </div>
 
         {/* Right Section: Content */}
-        <div className="w-1/2 p-8 flex flex-col justify-center">
+        <div className="w-full lg:w-1/2 lg:p-8 flex flex-col justify-center">
           {/* Product Name + Price */}
           <div className="mb-6 flex justify-between items-center bg-[#F9FAFC]">
             <h1 className="text-3xl font-bold text-gray-800 p-4">Saumon Gravlax</h1>
@@ -42,9 +41,11 @@ const ProductCard = () => {
             <p className="text-sm text-gray-500 mt-1">Perfect for special occasions and premium dining experiences.</p>
           </div>
 
+          <StepComponent />
+
           {/* Quantity Counter + Buy Button */}
           <div className="flex items-center justify-start gap-4">
-            {/* Counter */}
+            {/* Counter
             <div className="flex items-center gap-8">
               <button
                 className="text-xl text-white p-2 bg-primary rounded-full"
@@ -59,12 +60,14 @@ const ProductCard = () => {
               >
                 <FaPlus />
               </button>
-            </div>
+            </div> */}
 
             {/* Buy Now Button */}
-            <button className="bg-primary text-white px-6 py-3 hover:bg-teal-500 flex flex-row gap-2 items-center">
-              <FaBagShopping color="white" /> Buy Now
-            </button>
+            <a href="https://wa.me/918438807386?text=Hello%20I%20am%20interested%20in%20your%20services" className="w-full">
+              <button className="bg-primary w-full text-center text-xl justify-center border-[1px] border-solid border-primary text-white px-6 py-3 hover:bg-white hover:text-primary flex flex-row gap-2 items-center transition-all duration-500 ease-in-out">
+                <FaBagShopping /> Buy Now
+              </button>
+            </a>
           </div>
         </div>
       </div>
