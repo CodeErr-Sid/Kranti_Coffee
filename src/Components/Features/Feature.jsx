@@ -23,7 +23,7 @@ const Feature = ({ featureHeading, featureContent, featureIcon, alignMent }) => 
                 <p className='font-quickSand font-normal text-base'>{featureContent}</p>
             </div>
             <div className='w-3/12'>
-                <img src={featureIcon} alt={featureHeading} />
+                <img loading="lazy" src={featureIcon} alt={featureHeading} />
             </div>
         </div>
     )

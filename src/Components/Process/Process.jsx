@@ -53,7 +53,7 @@ const Process = () => {
             transition={{ duration: 0.8, delay: index * 0.2 }}
           >
             <div className="icon-container w-1/4 mb-2">
-              <img className="object-contain aspect-square" src={item.image} alt="" />
+              <img loading="lazy" className="object-contain aspect-square" src={item.image} alt="" />
             </div>
             <p
               className="font-quickSand font-medium w-1/2"

@@ -53,7 +53,7 @@ const Features = () => {
           viewport={{ once: true, amount: 0.9 }} // Trigger when 30% of image is visible
           transition={{ duration: 1, ease: 'easeOut' }}
         >
-          <img className="relative z-20" src={assets.coffeeSplash} alt="Coffee Cup Splash" />
+          <img loading="lazy" className="relative z-20" src={assets.coffeeSplash} alt="Coffee Cup Splash" />
         </motion.div>
 
         {/* Second Half Features */}

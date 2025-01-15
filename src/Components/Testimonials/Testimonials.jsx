@@ -156,13 +156,13 @@ const TestimonialCarousel = () => {
                   }}
                   onClick={() => handleClick(index)}
                 >
-                  <img src={profile.image} alt={profile.name} className="w-full h-full object-cover object-top" />
+                  <img loading="lazy" src={profile.image} alt={profile.name} className="w-full h-full object-cover object-top" />
                 </button>
               ))}
             </div>
 
             <div className="absolute top-14 left-1/2 transform -translate-x-1/2 translate-y-1/2 w-full max-w-2xl">
-              <img src={assets.double} alt='' className='w-10 h-10 md:w-16 md:h-16 absolute -top-10 -left-2 md:-left-6' />
+              <img loading="lazy" src={assets.double} alt='' className='w-10 h-10 md:w-16 md:h-16 absolute -top-10 -left-2 md:-left-6' />
               <div className="bg-white rounded-lg shadow-md p-2 lg:p-6 lg:pt-16 transition-all duration-300">
                 <div className="relative text-center mb-4">
                   <blockquote className="text-base lg:text-lg px-2  lg:px-8">
@@ -182,7 +182,7 @@ const TestimonialCarousel = () => {
                   </div> */}
                 </div>
               </div>
-              <img src={assets.double} alt='' className='w-5 h-5 absolute bottom-0 right-0 rotate-180' />
+              <img loading="lazy" src={assets.double} alt='' className='w-5 h-5 absolute bottom-0 right-0 rotate-180' />
             </div>
           </div>
         </div>

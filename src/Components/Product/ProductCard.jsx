@@ -12,7 +12,7 @@ const ProductCard = () => {
       <div className="flex w-[80%] bg-white rounded-lg overflow-hidden">
         {/* Left Section: Image */}
         <div className="w-1/2 bg-[#F9FAFC]">
-          <img
+          <img loading="lazy"
             src={assets.coffeePacketSlab}
             alt="Product"
             className="w-[70vh] mx-auto py-4 h-full object-contain aspect-square"

@@ -31,7 +31,7 @@ const Navbar = () => {
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <Link to='/'>
-              <img
+              <img loading="lazy"
                 src={assets.logo}
                 alt="Logo"
                 width={133}

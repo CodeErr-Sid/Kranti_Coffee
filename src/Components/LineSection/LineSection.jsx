@@ -76,11 +76,11 @@ const LineSection = ({ contentArray }) => {
             <h1 className="uppercase font-tanAegan font-normal text-2xl text-center pt-24 pb-4">our Sourcing</h1>
 
             <div className='w-1/3 mx-auto mb-16 lg:mb-4'>
-                <img src={assets.fourHandles} alt="" />
+                <img loading="lazy" src={assets.fourHandles} alt="" />
             </div>
 
             <section className={styles.lineSection} ref={lineSectionRef}>
-                <img src={assets.coffeeBean} className='absolute -top-12 w-16 z-[4]' alt="" />
+                <img loading="lazy" src={assets.coffeeBean} className='absolute -top-12 w-16 z-[4]' alt="" />
 
                 <div className={styles.verticalLine}>
                     <div className={styles.childLine} ref={childLineRef}></div>
@@ -92,7 +92,7 @@ const LineSection = ({ contentArray }) => {
                             <div className={styles.stickyBox}>
                                 <div className={styles.stickyHeader}>
                                     <div className='bg-white p-2 rounded-sm'>
-                                        <img src={item.icon} alt="" className='w-[30px] h-[30px]' />
+                                        <img loading="lazy" src={item.icon} alt="" className='w-[30px] h-[30px]' />
                                     </div>
                                     <h1 className='bg-primary text-center font-tanAegan text-secondary font-normal text-xs leading-1 lg:text-sm flex-1'>{item.title}</h1>
                                 </div>
@@ -111,8 +111,8 @@ const LineSection = ({ contentArray }) => {
                 ))}
             </section>
 
-            <img src={assets.coffeePowerSpilled} className='absolute top-[23rem] w-1/3 right-0' alt="" />
-            <motion.img
+            <img loading="lazy" src={assets.coffeePowerSpilled} className='absolute top-[23rem] w-1/3 right-0' alt="" />
+            <motion.img loading="lazy"
                 src={assets.coffeeTopView}
                 className="absolute top-[43rem] w-1/4 left-0"
                 alt=""
@@ -126,8 +126,8 @@ const LineSection = ({ contentArray }) => {
                     ease: 'linear', // Continuous, smooth animation
                 }}
             />
-            <img src={assets.coffeeBeanShovel} className='absolute top-[106rem] w-1/3 right-0' alt="" />
-            <img src={assets.naturalSoil} className='w-full absolute bottom-0 z-[3]' alt="" />
+            <img loading="lazy" src={assets.coffeeBeanShovel} className='absolute top-[106rem] w-1/3 right-0' alt="" />
+            <img loading="lazy" src={assets.naturalSoil} className='w-full absolute bottom-0 z-[3]' alt="" />
         </div>
     );
 };

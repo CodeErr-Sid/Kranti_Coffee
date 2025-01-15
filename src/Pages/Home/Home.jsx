@@ -8,6 +8,7 @@ import assets from '../../data/assets.js';
 import LineSection from '../../Components/LineSection/LineSection'
 import { content } from '../../data/VerticalSlider'
 import { slidesContent } from '../../data/Hero'
+import Loader1 from '../../Components/PageLoader/Loader1.jsx'
 
 const Home = () => {
     return (
