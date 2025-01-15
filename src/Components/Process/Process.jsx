@@ -6,20 +6,20 @@ const coffeeFeatures = [
   {
     id: 1,
     title: "Easy to Order",
-    content: "Ordering your delicious morning coffee is a breeze—just one click and it’s on its way!",
-    image: assets.cartMobileHand, // replace with actual image path or URL
+    content: "Sustainable Speciality Green Coffee Suppliers",
+    image: assets.process1, // replace with actual image path or URL
   },
   {
     id: 2,
     title: "Fastest Delivery",
-    content: "Before you know it, your order will arrive right at your doorstep, fresh and ready!",
-    image: assets.truckDelivery, // replace with actual image path or URL
+    content: "Exclusive micro-lots that are all stored in-house",
+    image: assets.process2, // replace with actual image path or URL
   },
   {
     id: 3,
     title: "Quality Coffee",
-    content: "Quality handpicked coffee beans guarantee a bold and exotic flavor in your daily cup.",
-    image: assets.starCoffeeBeans, // replace with actual image path or URL
+    content: "Ready to <br/> Re-Export",
+    image: assets.process3, // replace with actual image path or URL
   },
 ];
 
@@ -38,12 +38,14 @@ const Process = () => {
               <div className="icon-container w-1/4 mb-2">
                 <img className='object-contain aspect-square' src={item.image} alt="" />
               </div>
-              <h5 className='font-tanAegan font-normal text-base uppercase'>
+              {/* <h5 className='font-tanAegan font-normal text-base uppercase'>
                 {item.title}
-              </h5>
-              <p className='font-quickSand font-medium w-3/4'>
-                {item.content}
-              </p>
+              </h5> */}
+              <p
+                className="font-quickSand font-medium w-1/2"
+                dangerouslySetInnerHTML={{ __html: item.content }}
+              />
+
             </div>
           ))
         }

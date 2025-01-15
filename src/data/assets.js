@@ -21,6 +21,11 @@ const assets = {
     cartMobileHand: '/assets/cart_mobile_hand.png',
     starCoffeeBeans: '/assets/star_coffee_beans.png',
     truckDelivery: '/assets/truck_delivery.png',
+
+    process1: '/assets/process_1.png',
+    process2: '/assets/process_2.png',
+    process3: '/assets/process_3.png',
+
     testimonialPlaceHolder: '/assets/testimonial_place_holder.png',
     double: '/assets/double.png',
     coffeeBeansBag: '/assets/coffee_ beans_bag.png',
