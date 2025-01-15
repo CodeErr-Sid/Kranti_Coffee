@@ -6,8 +6,8 @@ import Process from '../../Components/Process/Process'
 import Testimonials from '../../Components/Testimonials/Testimonials'
 import assets from '../../data/assets.js';
 import LineSection from '../../Components/LineSection/LineSection'
-import { slidesContent } from '../../data/Hero'
 import { content } from '../../data/VerticalSlider'
+import { slidesContent } from '../../data/Hero'
 
 const Home = () => {
     return (

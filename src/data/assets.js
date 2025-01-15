@@ -44,6 +44,8 @@ const assets = {
     sourcing5: '/assets/sourcing5.png',
     sourcing6: '/assets/sourcing6.png',
     coffeeBean: '/assets/singlecoffeebean.png',
+
+    coffeeVapourVideo: '/assets/coffee-vapour-video.mp4'
 };
 
 export default assets;

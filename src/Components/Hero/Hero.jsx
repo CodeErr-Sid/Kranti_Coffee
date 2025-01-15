@@ -14,7 +14,7 @@ const HeroWithCarousel = ({ slides }) => {
       modules={[Pagination, Autoplay]}
       className="mySwiper"
       autoplay={{
-        delay: 7000,  // Change to 15000 for 15 seconds
+        delay: 60000,  // Change to 15000 for 15 seconds
       }}
       loop={true}
     >
@@ -25,6 +25,18 @@ const HeroWithCarousel = ({ slides }) => {
             className="text-secondary lg:mt-8 min-h-screen lg:min-h-[87vh] flex items-center px-6 sm:px-8 md:px-16 bg-no-repeat bg-cover bg-bottom drop-shadow-custom"
             style={{ backgroundImage: `url("${slide.backgroundImage}")` }}
           >
+
+            {!slide.backgroundImage && slide.backgroundVideo && (
+              <video
+                className="absolute inset-0 -z-10 w-full h-full object-cover"
+                src={slide.backgroundVideo}
+                type="video/mp4"
+                autoPlay
+                loop
+                muted
+              />
+            )}
+
             <div className="container mx-auto flex flex-col md:flex-row items-center">
               {/* Left Content */}
               <div className={`md:text-left md:w-1/2 space-y-4 sm:space-y-6 flex flex-col items-center md:items-start md:justify-center text-center lg:text-left ${slide.contentBoxClassName}`}>
