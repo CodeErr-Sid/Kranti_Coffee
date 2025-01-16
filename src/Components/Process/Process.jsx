@@ -56,7 +56,7 @@ const Process = () => {
               <img loading="lazy" className="object-contain aspect-square" src={item.image} alt="" />
             </div>
             <p
-              className="font-quickSand font-medium w-1/2"
+              className="font-quickSand font-medium w-3/4 lg:w-1/2"
               dangerouslySetInnerHTML={{ __html: item.content }}
             />
           </motion.div>
