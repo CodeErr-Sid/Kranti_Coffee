@@ -40,12 +40,15 @@ const HeroWithCarousel = ({ slides }) => {
             <div className="container mx-auto flex flex-col md:flex-row items-center">
               {/* Left Content */}
               <div className={`md:text-left md:w-1/2 space-y-4 sm:space-y-6 flex flex-col items-center md:items-start md:justify-center text-center lg:text-left ${slide.contentBoxClassName}`}>
-                <h1 className={`font-tanAegan font-normal text-2xl lg:text-4xl lg:leading-[76px] uppercase ${slide.titleClassName}`}>
-                  {slide.title}
-                </h1>
-                <p className={`font-quickSand font-medium text-base lg:text-xl sm:text-base w-full ${slide.contentClassName}`}>
-                  {slide.content}
-                </p>
+                <h1
+                  className={`font-tanAegan font-normal text-2xl lg:text-4xl lg:leading-[76px] uppercase ${slide.titleClassName}`}
+                  dangerouslySetInnerHTML={{ __html: slide.title }}
+                ></h1>
+                <p
+                  className={`font-quickSand font-medium text-base lg:text-xl sm:text-base w-full ${slide.contentClassName}`}
+                  dangerouslySetInnerHTML={{ __html: slide.content }}
+                ></p>
+
                 <CallToAction
                   content="Order Now For Free"
                   bgColor="white"

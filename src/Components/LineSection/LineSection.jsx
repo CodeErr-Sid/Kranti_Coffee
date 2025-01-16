@@ -72,7 +72,7 @@ const LineSection = ({ contentArray }) => {
     }, []);
 
     return (
-        <div className='relative min-h-[400vh] overflow-hidden'>
+        <div className='relative min-h-[400vh] overflow-x-hidden'>
             <h1 className="uppercase font-tanAegan font-normal text-2xl text-center pt-24 pb-4">our Sourcing</h1>
 
             <div className='w-1/3 mx-auto mb-16 lg:mb-4'>
