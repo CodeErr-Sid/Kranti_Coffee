@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger, ScrollToPlugin } from 'gsap/all';
 import './Preloader.css'; // Import CSS file
+import assets from '../../data/assets';
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -87,7 +88,9 @@ const Preloader = () => {
         <div className="mil-pos-abs mil-animation-2">
           <div className="mil-reveal-frame">
             <p className="mil-reveal-box"></p>
-            <p className="mil-h3 mil-maroon mil-thin min-web-header">kranticoffee.com</p>
+            <div className="mil-h3 mil-maroon mil-thin min-web-header">
+              <img src={assets.logoPrimary} className='w-[300px]' alt="" />
+            </div>
           </div>
         </div>
       </div>

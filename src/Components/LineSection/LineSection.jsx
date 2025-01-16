@@ -126,7 +126,7 @@ const LineSection = ({ contentArray }) => {
                     ease: 'linear', // Continuous, smooth animation
                 }}
             />
-            <img loading="lazy" src={assets.coffeeBeanShovel} className='absolute top-[106rem] w-1/3 right-0' alt="" />
+            <img loading="lazy" src={assets.coffeeBeanShovel} className='absolute top-[65%] w-1/3 right-0' alt="" />
             <img loading="lazy" src={assets.naturalSoil} className='w-full absolute bottom-0 z-[3]' alt="" />
         </div>
     );

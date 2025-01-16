@@ -1,6 +1,7 @@
 
 const assets = {
     logo: '/assets/logo.png',
+    logoPrimary: '/assets/logo-primary.png',
     coffeePacket: '/assets/coffee-packet.png',
     krantiHero: '/assets/Kranti_Hero_image.svg',
     krantiHeroBg: '/assets/kranti_hero_bg.png',
