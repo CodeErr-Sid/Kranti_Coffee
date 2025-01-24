@@ -7,7 +7,8 @@ import Testimonials from '../../Components/Testimonials/Testimonials'
 import assets from '../../data/assets.js';
 import LineSection from '../../Components/LineSection/LineSection'
 import { content } from '../../data/VerticalSlider'
-import { slidesContent } from '../../data/Hero'
+import { instagramPosts, slidesContent } from '../../data/Hero'
+import InstagramPost from '../../Components/InstagramPosts/InstagramPost.jsx'
 
 const Home = () => {
     return (
@@ -31,7 +32,7 @@ const Home = () => {
                 bannerBackgroundImage={assets.coffeeCupBg}
             />
             <LineSection contentArray={content} />
-            <Testimonials />
+            <InstagramPost instagramURLS={instagramPosts} />
             <Banner
                 bannerHeading="Enjoy our exotic coffee in diverse brews"
                 bannerContent="Start your day with the rich, bold, and unique flavors of our expertly crafted coffee"
