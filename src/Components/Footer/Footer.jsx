@@ -19,11 +19,11 @@ const Footer = () => {
         </div>
         <div className="social-media-section">
           <div className="flex gap-4 justify-around">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/kranticoffee/" target="_blank" rel="noopener noreferrer">
               <FaInstagram size={35} className="text-primary bg-white rounded-full p-2" />
             </a>
-            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-              <FaFacebook size={35} className="text-primary bg-white rounded-full p-2" />
+            <a href="https://www.linkedin.com/company/kranticoffee/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin size={35} className="text-primary bg-white rounded-full p-2" />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
               <FaYoutube size={35} className="text-primary bg-white rounded-full p-2" />
