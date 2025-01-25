@@ -22,18 +22,12 @@ const HeroWithCarousel = ({ slides }) => {
       {slides && slides.map((slide, index) => (
         <SwiperSlide key={index}>
           <section
-            className="text-secondary lg:mt-8 min-h-screen lg:min-h-[87vh] flex items-center px-6 sm:px-8 md:px-16 bg-no-repeat bg-cover bg-bottom drop-shadow-custom"
-            style={{ backgroundImage: `url("${slide.backgroundImage}")` }}
-          >
-
-            {!slide.backgroundImage && slide.backgroundVideo && (
-              <video
-                className="absolute inset-0 -z-10 w-full h-full object-cover"
-                src={slide.backgroundVideo}
-                type="video/mp4"
-                autoPlay
-                loop
-                muted
+            className="text-secondary lg:mt-8 min-h-screen lg:min-h-[87vh] flex items-center px-6 sm:px-8 md:px-16 bg-no-repeat bg-cover bg-bottom drop-shadow-custom">
+            
+            {slide.backgroundImage  && (
+              <img
+                className="absolute inset-0 -z-10 w-full h-dvh md:h-full object-cover brightness-50 max-[425px]:top-8"
+                src={slide.backgroundImage}
               />
             )}
 

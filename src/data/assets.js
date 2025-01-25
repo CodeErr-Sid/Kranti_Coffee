@@ -5,6 +5,7 @@ const assets = {
     coffeePacket: '/assets/coffee-packet.png',
     krantiHero: '/assets/Kranti_Hero_image.svg',
     krantiHeroBg: '/assets/kranti_hero_bg.png',
+    krantiHeroBg2: '/assets/hero3.webp',
     hero2: '/assets/hero-2.png',
     hero3: '/assets/hero-3.png',
     coffeePacketSlab: '/assets/kranti-barbara-honey-sundried.png',
@@ -46,10 +47,10 @@ const assets = {
     sourcing6: '/assets/sourcing6.png',
     coffeeBean: '/assets/singlecoffeebean.png',
     coffeeVapourVideo: '/assets/coffee-vapour-video.mp4',
-    productImage1:'/assets/p1.webp',
-    productImage2:'/assets/p2.webp',
-    productImage3:'/assets/p3.webp',
-    productVideo:'/assets/krantivideo.mp4'
+    productImage1: '/assets/p1.webp',
+    productImage2: '/assets/p2.webp',
+    productImage3: '/assets/p3.webp',
+    productVideo: '/assets/krantivideo.mp4'
 };
 
 export default assets;
