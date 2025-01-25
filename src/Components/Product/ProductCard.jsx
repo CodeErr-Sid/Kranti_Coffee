@@ -3,23 +3,25 @@ import assets from "../../data/assets";
 import { FaWhatsapp } from "react-icons/fa6";
 import Dropdown from "./Dropdown";
 import QuantitySelector from "./QuantitySelector";
+import MediaGallery from './MediaGallery'
 
 const ProductCard = () => {
 
-
-  const [quantity, setQuantity] = useState(1);
+  const mediaData = [
+    { src: assets.productVideo, type: "video" },
+    { src: assets.productImage1, type: "image" },
+    { src: assets.productImage2, type: "image" },
+    { src: assets.productImage3, type: "image" },
+    { src: assets.productImage1, type: "image" }
+  ]
 
 
   return (
     <section className="flex justify-center items-center min-h-screen p-4">
       <div className="flex flex-col lg:flex-row w-[90%] bg-white gap-4 rounded-lg overflow-hidden">
         {/* Left Section: Image */}
-        <div className="w-full lg:w-1/2 bg-[#F9FAFC]">
-          <img loading="lazy"
-            src={assets.coffeePacketSlab}
-            alt="Product"
-            className="w-[70vh] mx-auto py-4 h-full object-contain aspect-square"
-          />
+        <div className="w-full h-full lg:w-1/2">
+          <MediaGallery media={mediaData} />
         </div>
 
         {/* Right Section: Content */}
