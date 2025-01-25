@@ -1,7 +1,22 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import './Product.css'
 
 const MediaGallery = ({ media }) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
+
+    const videoRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    const handlePlayPause = () => {
+        if (videoRef.current) {
+            if (isPlaying) {
+                videoRef.current.pause();
+            } else {
+                videoRef.current.play();
+            }
+            setIsPlaying(!isPlaying);
+        }
+    };
 
     return (
         <div className="w-full h-full flex flex-col-reverse gap-4 lg:gap-0 lg:flex-row">
@@ -10,15 +25,28 @@ const MediaGallery = ({ media }) => {
                 {media.map((item, index) => (
                     <div
                         key={index}
-                        className={`flex-1 justify-between cursor-pointer border-4 rounded-md transition-all ${index === selectedIndex ? "border-primary" : "border-transparent"
+                        className={`flex-1 relative justify-between cursor-pointer border-4 rounded-md transition-all ${index === selectedIndex ? "border-primary" : "border-transparent"
                             }`}
                         onClick={() => setSelectedIndex(index)}
                     >
                         {item.type === "video" ? (
-                            <video
-                                src={item.src}
-                                className="w-full h-full object-cover aspect-square"
-                            />
+                            <>
+                                <video
+                                    src={item.src}
+                                    className="w-full h-full object-cover aspect-square"
+                                />
+                                <div className="absolute top-[-7%] left-1/2 transform-center-ll">
+                                    <button className="button is-play w-14 h-14 cursor-pointer bg-primary">
+                                        <div className="button-icon is-play">
+                                            <svg height="100%" width="100%" fill="#ffffff">
+                                                <polygon className="triangle" points="5,0 30,15 5,30"></polygon>
+                                                <path className="path" d="M5,0 L30,15 L5,30z" fill="none" stroke="#ffffff" strokeWidth="1"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </>
+
                         ) : (
                             <img
                                 src={item.src}
@@ -31,13 +59,30 @@ const MediaGallery = ({ media }) => {
             </div>
 
             {/* Right Part: Big Image/Video */}
-            <div className="w-full lg:w-[80%] flex items-center justify-center bg-gray-200">
+            <div className="w-full lg:w-[80%] flex items-center justify-center bg-gray-200"
+                onClick={handlePlayPause}
+            >
                 {media[selectedIndex].type === "video" ? (
-                    <video
-                        src={media[selectedIndex].src}
-                        controls
-                        className="w-full h-full object-cover aspect-square"
-                    />
+                    <>
+                        <video
+                            ref={videoRef}
+                            src={media[selectedIndex].src}
+                            className="w-full h-full object-cover aspect-square"
+
+                        />
+                        <button className={`absolute button is-play cursor-pointer bg-primary transition-all duration-150 ease-linear ${isPlaying ? 'opacity-0' : 'opacity-1'}`}>
+                            <div className="button-outer-circle has-scale-animation"></div>
+                            <div className="button-outer-circle has-scale-animation has-delay-short"></div>
+                            <div className="button-icon is-play">
+                                <svg height="100%" width="100%" fill="#ffffff">
+                                    <polygon className="triangle" points="5,0 30,15 5,30"></polygon>
+                                    <path className="path" d="M5,0 L30,15 L5,30z" fill="none" stroke="#ffffff" strokeWidth="1"></path>
+                                </svg>
+                            </div>
+                        </button>
+                    </>
+
+
                 ) : (
                     <img
                         src={media[selectedIndex].src}
@@ -45,6 +90,8 @@ const MediaGallery = ({ media }) => {
                         className="w-full h-full object-cover aspect-square"
                     />
                 )}
+
+
             </div>
 
 
