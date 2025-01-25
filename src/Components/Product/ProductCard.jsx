@@ -56,7 +56,7 @@ const ProductCard = () => {
             <QuantitySelector initialQuantity={1} minQuantity={1} maxQuantity={2} onQuantityChange={(quantity) => console.log(quantity)} title="Select Quantity" />
 
             {/* Buy Now Button */}
-            <a target="_blank" href="https://wa.me/918438807386?text=Hello%20I%20am%20interested%20in%20your%20services" className="w-full">
+            <a target="_blank" href="https://wa.me/971506581227?text=Hi%20I%E2%80%99m%20interested%20to%20order%20samples%20and%20I%20am%20a%20home%20brewer%2Fcoffee%20company" className="w-full">
               <button className="bg-primary w-full text-center  text-xl justify-center border-[1px] border-solid border-primary text-white px-6 py-3 hover:bg-white hover:text-primary flex flex-row gap-2 items-center transition-all duration-500 ease-in-out">
                 <FaWhatsapp />
                 <span>Let's Go</span>

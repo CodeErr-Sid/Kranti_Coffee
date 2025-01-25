@@ -6,6 +6,7 @@ import NavbarSection from './Components/Navbar/Navbar';
 import Product from './Pages/Product';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import PreLoader from './Components/PageLoader/Preloader';
+import assets from './data/assets';
 
 function App() {
 
@@ -21,11 +22,12 @@ function App() {
         <Footer />
       </Router>
       <FloatingWhatsApp
-        phoneNumber="+91 99401 78297"
+        phoneNumber="+971506581227"
         allowClickAway
-        chatMessage="Hi there, How can we help you?"
-        statusMessage="Chief Rice Officer"
-        accountName="Kishore Jeyachandran"
+        chatMessage="Hi I’m interested to order samples and I am a home brewer/coffee company"
+        statusMessage=""
+        accountName="Kranti Coffee"
+        avatar={assets.greenBGLOGO}
       />
     </>
   )

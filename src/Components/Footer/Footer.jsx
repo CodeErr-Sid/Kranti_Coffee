@@ -8,7 +8,7 @@ import { FaLocationPin } from 'react-icons/fa6';
 const Footer = () => {
 
 
-  const phoneNumber = '8438807386'
+  const phoneNumber = '971506581227'
   const address = 'Al Fahidi District, Dubai, UAE'
 
   return (
