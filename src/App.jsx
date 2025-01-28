@@ -7,6 +7,8 @@ import Product from './Pages/Product';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import PreLoader from './Components/PageLoader/Preloader';
 import assets from './data/assets';
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+
 
 function App() {
 
@@ -14,6 +16,7 @@ function App() {
     <>
       <PreLoader />
       <Router>
+        <ScrollToTop />
         <NavbarSection />
         <Routes>
           <Route path="/" element={<Home />} />
