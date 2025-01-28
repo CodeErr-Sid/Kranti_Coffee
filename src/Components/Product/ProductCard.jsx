@@ -17,7 +17,7 @@ const ProductCard = () => {
 
 
   return (
-    <section className="flex justify-center items-center min-h-screen p-4">
+    <section className="flex justify-center items-center min-h-screen p-4 mt-[72px]">
       <div className="flex flex-col lg:flex-row w-[90%] bg-white gap-4 rounded-lg overflow-hidden">
         {/* Left Section: Image */}
         <div className="w-full h-full lg:w-1/2">

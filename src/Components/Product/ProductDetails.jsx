@@ -9,7 +9,7 @@ const ProductDetails = () => {
                 {productDetails.map((item, index) => (
                     <li className='font-quickSand font-normal text-base' key={index}>{item}</li>
                 ))}
-                <p className='text-bold underline text-blue-600'>
+                <p className='text-bold underline text-blue-600 mt-4'>
                     <a target='_blank' href="/kranti-genral-list.pdf">
                         Offer list for January 2025
                     </a>

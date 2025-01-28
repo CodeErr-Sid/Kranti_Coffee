@@ -8,7 +8,7 @@ import { faqs } from '../data/productData'
 const Product = () => {
     return (
         <section>
-            <HeroBanner />
+            {/* <HeroBanner /> */}
             <ProductCard />
             <ProductDetails />
             <FAQ faqs={faqs} />
