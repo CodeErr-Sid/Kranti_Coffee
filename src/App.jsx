@@ -27,7 +27,7 @@ function App() {
       <FloatingWhatsApp
         phoneNumber="+971506581227"
         allowClickAway
-        chatMessage="Hi I’m interested to order samples and I am a home brewer/coffee company"
+        chatMessage="Hi there! How can we assist you today? ☕"
         statusMessage=""
         accountName="Kranti Coffee"
         avatar={assets.greenBGLOGO}
