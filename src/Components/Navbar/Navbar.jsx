@@ -73,7 +73,7 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`transition-all duration-500 ease-in-out transform md:transition-none p-2 ${isMenuOpen
+            className={`transition-all duration-500 ease-in-out transform md:transition-none lg:p-2 ${isMenuOpen
               ? "max-h-screen translate-y-0 opacity-100"
               : "max-h-0 -translate-y-10 opacity-0"
               } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}

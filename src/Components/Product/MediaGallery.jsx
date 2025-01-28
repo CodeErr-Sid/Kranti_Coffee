@@ -35,8 +35,8 @@ const MediaGallery = ({ media }) => {
                                     src={item.src}
                                     className="w-full h-full object-cover aspect-square"
                                 />
-                                <div className="absolute top-[-22%] lg:top-[-7%] left-1/2 transform-center-ll">
-                                    <button className="button is-play w-7 h-7 lg:w-14 lg:h-14 cursor-pointer bg-primary">
+                                <div className="absolute top-[-38%] lg:top-[-7%] left-1/2 transform-center-ll">
+                                    <button className="button is-play w-12 h-12 lg:w-14 lg:h-14 cursor-pointer bg-primary">
                                         <div className="button-icon is-play">
                                             <svg height="100%" width="100%" fill="#ffffff">
                                                 <polygon className="triangle" points="5,0 30,15 5,30"></polygon>
