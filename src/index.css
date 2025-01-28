@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 /* TAN AEGAN Font */
 /* Regular 400*/
 @font-face {
@@ -57,12 +62,10 @@ body {
     overflow-x: hidden;
 }
 
-html{
-    scroll-behavior: smooth;
-}
 
-.swiper-pagination-bullet{
-    width: 25px!important;
-    height: 25px!important;
-    background-color: white!important;
+
+.swiper-pagination-bullet {
+    width: 25px !important;
+    height: 25px !important;
+    background-color: white !important;
 }

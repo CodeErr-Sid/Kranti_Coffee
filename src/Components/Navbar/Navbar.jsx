@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import assets from '../../data/assets.js';
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { title: "About", id: "home" },
-    { title: "Our Speciality", id: "plans" },
-    { title: "Our Sourcing", id: "about" },
-    { title: "Contact", id: "testimonials" },
+    { title: "Our Speciality", id: "ifeatures" },
+    { title: "Our Sourcing", id: "isourcing" },
+    { title: "Contact", id: "icontact" },
   ];
 
   const toggleMenu = () => {
@@ -73,7 +73,7 @@ const Navbar = () => {
             </button>
           </div>
           <div
-            className={`transition-all duration-500 ease-in-out transform md:transition-none ${isMenuOpen
+            className={`transition-all duration-500 ease-in-out transform md:transition-none p-2 ${isMenuOpen
               ? "max-h-screen translate-y-0 opacity-100"
               : "max-h-0 -translate-y-10 opacity-0"
               } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}
@@ -82,12 +82,16 @@ const Navbar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium bg-transparent rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
               {navLinks.map(({ title, id }) => (
                 <li key={id}>
-                  <button
-                    onClick={() => handleScroll(id)}
-                    className="transito-all duration-500 ease-in-out capitalize block py-2 px-3 rounded text-white md:bg-transparent md:p-0 hover:-translate-y-2"
+                  <ScrollLink
+                    to={id}
+                    smooth={true}
+                    duration={900}
+                    offset={-80} // Adjust for navbar height
+                    className="transito-all duration-500 ease-in-out capitalize block py-2 px-3 rounded text-white md:bg-transparent md:p-0 hover:-translate-y-2 cursor-pointer"
+                    onClick={() => setIsMenuOpen(false)}
                   >
                     {title}
-                  </button>
+                  </ScrollLink>
                 </li>
               ))}
             </ul>

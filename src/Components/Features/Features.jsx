@@ -21,7 +21,7 @@ const Features = () => {
   };
 
   return (
-    <section className="features-section relative bg-white flex items-center px-6 overflow-hidden">
+    <section id='ifeatures' className="features-section relative bg-white flex items-center px-6 overflow-hidden">
       <div className="container mx-auto flex flex-col py-4 lg:flex-row items-center relative z-30">
 
         {/* First Half Features */}

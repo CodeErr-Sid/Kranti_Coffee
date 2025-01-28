@@ -12,7 +12,7 @@ const Footer = () => {
   const address = 'Al Fahidi District, Dubai, UAE'
 
   return (
-    <section className="features-section bg-primary flex items-center py-12 px-6 sm:px-8 md:px-16">
+    <footer id='icontact' className="features-section bg-primary flex items-center py-12 px-6 sm:px-8 md:px-16">
       <div className="container flex flex-col items-left gap-4 items-center justify-around">
         <div className="logo-section w-1/5">
           <img loading="lazy" src={assets.logo} alt="" />
@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
         </div>
       </div>
-    </section>
+    </footer>
   )
 }
 
