@@ -29,7 +29,6 @@ const Navbar = () => {
               alt="Logo"
               width={133}
               height={43}
-              className="h-8"
             />
           </Link>
         </div>
@@ -45,7 +44,7 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             type="button"
-            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden  focus:outline-none"
             aria-controls="navbar-sticky"
             aria-expanded={isMenuOpen ? "true" : "false"}
           >
@@ -84,7 +83,7 @@ const Navbar = () => {
                   <ScrollLink
                     to={id}
                     smooth={true}
-                    duration={900}
+                    duration={500}
                     offset={-80} // Adjust for navbar height
                     className="transition-all duration-500 ease-in-out capitalize block py-2 px-3 rounded text-white md:bg-transparent md:p-0 hover:-translate-y-2 cursor-pointer"
                     onClick={() => setIsMenuOpen(false)}

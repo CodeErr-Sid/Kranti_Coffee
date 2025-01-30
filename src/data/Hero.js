@@ -29,9 +29,11 @@ const slidesContent = [
 ];
 
 const instagramPosts = [
-    "https://www.instagram.com/p/DBGzVw3TSDN",
-    "https://www.instagram.com/p/DBbJXs2TCD8/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
-    "https://www.instagram.com/p/DDcR2ZEo2wd",
+    "https://www.instagram.com/reel/DDWOq3jzuZL/?igsh=MWNkYmFqeWN5dGFnbQ==",
+
+    "https://www.instagram.com/reel/DDdONMjIRF0/?igsh=MXFxMzl0YXV3OG91aw==",
+
+    "https://www.instagram.com/p/C-fmYvygicl/?igsh=c2d4eTF1ODJobjU=",
 ]
 
 export { slidesContent, instagramPosts }

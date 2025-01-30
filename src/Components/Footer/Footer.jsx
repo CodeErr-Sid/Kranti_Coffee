@@ -1,6 +1,6 @@
 import React from 'react'
 import assets from '../../data/assets.js';
-import { FaFacebook, FaYoutube, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa'
 import CallToAction from '../CallToAction/CallToAction.jsx';
 import { FaLocationPin } from 'react-icons/fa6';
 
@@ -25,16 +25,16 @@ const Footer = () => {
             <a href="https://www.linkedin.com/company/kranticoffee/" target="_blank" rel="noopener noreferrer">
               <FaLinkedin size={35} className="text-primary bg-white rounded-full p-2" />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-              <FaYoutube size={35} className="text-primary bg-white rounded-full p-2" />
+            <a href=" https://www.facebook.com/kranticoffeeuae" target="_blank" rel="noopener noreferrer">
+              <FaFacebook size={35} className="text-primary bg-white rounded-full p-2" />
             </a>
           </div>
         </div>
-        <CallToAction
+        {/* <CallToAction
           bgColor="white"
           fontColor="dark"
           content={'GET NOW'}
-        />
+        /> */}
         <div className='flex flex-row gap-2 font-semibold font-monteserrat text-white text-xl'>
           <FaLocationPin />
           <a target="_blank" href="https://maps.app.goo.gl/n5CWr8zzUfTZSd3R8">
