@@ -19,8 +19,8 @@ const FAQ = ({ faqs }) => {
                         <div key={index} className={`border-b-2 border-black ${index === faqs.length - 1 ? 'border-none' : ''}`}>
                             <div className="p-4" onClick={() => toggleVisibility(index)}>
                                 <div className='flex justify-between py-2'>
-                                    <h1 className='text-2xl md:text-3xl font-quickSand font-semibold'>{faq.question}</h1>
-                                    <h1 className='text-3xl md:text-4xl font-quickSand font-semibold cursor-pointer' onClick={() => toggleVisibility(index)}>
+                                    <h1 className='text-lg sm:text-2xl md:text-3xl font-quickSand font-semibold'>{faq.question}</h1>
+                                    <h1 className='text-base sm:text-3xl md:text-4xl font-quickSand font-semibold cursor-pointer' onClick={() => toggleVisibility(index)}>
                                         {visibleIndex === index ? (<FaCaretUp />) : (<FaCaretDown />)}
                                     </h1>
                                 </div>

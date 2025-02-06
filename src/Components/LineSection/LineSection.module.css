@@ -175,6 +175,8 @@
   }
 }
 
+
+
 /* Media Queries for responsive design */
 @media screen and (max-width: 425px) {
   .lineSection {
@@ -210,5 +212,17 @@
 
   .lineContent {
     font-size: 16px;
+  }
+}
+
+
+@media screen and (0<=width<=320px) {
+  .stickyHeader {
+    width: 100%;
+  }
+
+  .lineSection {
+    margin-bottom: 5rem;
+    height: 403vh;
   }
 }

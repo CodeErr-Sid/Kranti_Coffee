@@ -19,11 +19,11 @@ const Navbar = () => {
   return (
     <nav className="transition-[background] bg-primary shadow-md duration-500 ease-in-out fixed w-full z-50 top-0 start-0 border-none">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        
+
         {/* Logo */}
         <div className="flex items-center space-x-3 rtl:space-x-reverse">
           <Link to="/">
-            <img 
+            <img
               loading="lazy"
               src={assets.logo}
               alt="Logo"
@@ -69,11 +69,10 @@ const Navbar = () => {
 
         {/* Navigation Menu */}
         <div
-          className={`transition-all duration-500 ease-in-out transform md:transition-none lg:p-2 ${
-            isMenuOpen
-              ? "max-h-screen translate-y-0 opacity-100"
-              : "max-h-0 -translate-y-10 opacity-0"
-          } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}
+          className={`transition-all duration-500 ease-in-out transform md:transition-none lg:p-2 ${isMenuOpen
+            ? "max-h-screen translate-y-0 opacity-100"
+            : "max-h-0 -translate-y-10 opacity-0"
+            } items-center overflow-hidden justify-between w-full md:flex md:w-auto md:order-1 lg:static lg:opacity-100 lg:max-h-full lg:translate-y-0`}
           id="navbar-sticky"
         >
           <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium bg-transparent rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
@@ -102,6 +101,13 @@ const Navbar = () => {
                 )}
               </li>
             ))}
+            <li className="mt-2">
+              <Link to="/product">
+                <button className="self-center uppercase rounded-lg lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
+                  Order Now
+                </button>
+              </Link>
+            </li>
           </ul>
         </div>
 
