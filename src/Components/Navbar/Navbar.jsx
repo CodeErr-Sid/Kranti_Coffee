@@ -101,7 +101,7 @@ const Navbar = () => {
                 )}
               </li>
             ))}
-            <li className="mt-2">
+            <li className="mt-2 md:hidden">
               <Link to="/product">
                 <button className="self-center uppercase rounded-lg lg:inline-block px-8 py-1 bg-accent text-secondary font-tanAegan font-normal">
                   Order Now
