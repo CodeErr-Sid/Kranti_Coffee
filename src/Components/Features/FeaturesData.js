@@ -2,35 +2,36 @@ import assets from '../../data/assets.js';
 
 const featuresData = [
     {
-        "featureHeading": "Exclusive Regional Coffee",
-        "featureContent": "Each batch is grown in specific regions, offering unique and authentic flavors.",
-        "featureIcon": assets.feature_erc
+        "featureHeading": "Single Origin",
+        "featureContent": "Experience pure flavors from a single farm, capturing the essence of its unique terroir.",
+        "featureIcon": assets.feature_aq
     },
     {
-        "featureHeading": "Aromatic Delight",
-        "featureContent": "Offers a captivating aroma that enhances the coffee experience.",
-        "featureIcon": assets.feature_ad
-    },
-    {
-        "featureHeading": "Versatile Brew Options",
-        "featureContent": "Perfect for any brewing method—espresso, French press, drip, or cold brew.",
-        "featureIcon": assets.feature_vbo
-    },
-    {
-        "featureHeading": "Handpicked Beans",
-        "featureContent": "Only the ripest, highest-quality beans are carefully selected by hand.",
-        "featureIcon": assets.feature_hb
-    },
-    {
-        "featureHeading": "Rich, Bold Flavor",
-        "featureContent": "Offers a rich, layered flavor experience with every single sip.",
+        "featureHeading": "Exotic Coffee",
+        "featureContent": "Discover rare and distinctive beans, crafted to deliver an extraordinary taste experience in every sip.",
         "featureIcon": assets.feature_rbf
     },
     {
-        "featureHeading": "Artisan Quality",
-        "featureContent": "Crafted by expert roasters who ensure the perfect roast for every batch.",
-        "featureIcon": assets.feature_aq
+        "featureHeading": "Cup to Profiles",
+        "featureContent": "Expertly roasted to match flavor profiles, ensuring a perfect brew that suits your preferences.",
+        "featureIcon": assets.feature_hb
+    },
+    {
+        "featureHeading": "Specialty Micro and Nano Lots",
+        "featureContent": "Limited-batch coffees with exceptional quality, carefully curated for connoisseurs who appreciate exclusivity.",
+        "featureIcon": assets.feature_vbo
+    },
+    {
+        "featureHeading": "Sourced Directly from Producers",
+        "featureContent": "Sustainably sourced straight from farmers, ensuring quality, traceability, and fair trade practices.",
+        "featureIcon": assets.feature_ad
+    },
+    {
+        "featureHeading": "Processed and Cupped for Your Needs",
+        "featureContent": "Precision-crafted through consistent processing and cupping, guaranteeing optimal flavor and freshness.",
+        "featureIcon": assets.feature_erc
     }
 ]
+
 
 export default featuresData;

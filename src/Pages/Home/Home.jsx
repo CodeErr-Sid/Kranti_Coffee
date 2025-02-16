@@ -34,8 +34,8 @@ const Home = () => {
             <LineSection contentArray={content} />
             <InstagramPost instagramURLS={instagramPosts} />
             <Banner
-                bannerHeading="Enjoy our exotic coffee in diverse brews"
-                bannerContent="Start your day with the rich, bold, and unique flavors of our expertly crafted coffee"
+                bannerHeading="EXPERIENCE OUR EXOTIC BREWS"
+                bannerContent="Join us as we meticulously collect small samples from each harvest to bring you a selection of expertly crafted coffee."
                 bannerButtonContent="Get Now"
                 bannerBackgroundImage={assets.coffeePowder}
             />
