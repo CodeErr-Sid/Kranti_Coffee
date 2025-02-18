@@ -52,9 +52,7 @@ const Process = () => {
             variants={animationVariants[index]}
             transition={{ duration: 0.8, delay: index * 0.2 }}
           >
-            <div className="icon-container w-1/4 mb-2">
-              <img loading="lazy" className="object-contain aspect-square" src={item.image} alt="" />
-            </div>
+            <img loading="lazy" className="w-1/4ss object-contain aspect-square" src={item.image} alt="" />
             <p
               className="font-quickSand font-medium w-3/4 lg:w-1/2"
               dangerouslySetInnerHTML={{ __html: item.content }}

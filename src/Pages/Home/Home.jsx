@@ -24,13 +24,13 @@ const Home = () => {
                 bannerBackgroundImage={assets.coffeeBeansBg}
             />
             <Process />
-            <Banner
+            {/* <Banner
                 bannerHeading="Behind the Taste: Soil to Sip"
                 bannerContent="From the richness of the earth to the altitude of the farms, every detail influences the flavor that reaches your cup. This is more than coffee; it’s a story of place, people, and the craft of cultivation. "
                 bannerButtonContent="Get Your Free Cup Now "
                 isButtonAvailable={false}
                 bannerBackgroundImage={assets.coffeeCupBg}
-            />
+            /> */}
             <LineSection contentArray={content} />
             <InstagramPost instagramURLS={instagramPosts} />
             <Banner

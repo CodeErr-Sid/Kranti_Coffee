@@ -80,10 +80,10 @@ const Preloader = () => {
   return (
     <div className="mil-preloader">
       <div className="mil-preloader-animation">
-        <div className="mil-pos-abs mil-animation-1">
-          <p className="mil-h3 mil-bla mil-thin" id="color-mil-txt">Aromatic</p>
-          <p className="mil-h3 mil-maroon" id="color-mil-txt" style={{ color: '#114030' }}>Bold</p>
-          <p className="mil-h3 mil-black mil-thin" id="color-mil-txt">Defined</p>
+        <div className="mil-pos-abs mil-animation-1 text-3xl">
+          <p className="mil-h3 mil-bla mil-thin text-orange-500">Your Home</p>
+          <p className="mil-h3 mil-maroon text-blue-500">For</p>
+          <p className="mil-h3 mil-black mil-thin text-green-500">Exotic Coffee</p>
         </div>
         <div className="mil-pos-abs mil-animation-2">
           <div className="mil-reveal-frame">

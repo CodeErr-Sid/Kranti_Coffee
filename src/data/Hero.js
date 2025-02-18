@@ -17,15 +17,15 @@ const slidesContent = [
     //     CTAClassName: "bg-accent text-white",
 
     // },
-    {
-        title: "Coffee Crafted by Nature, Delivered to You ",
-        content: "Experience the essence of pure coffee—handpicked from farms and roasted <br/> to perfection for an unforgettable taste.",
-        backgroundImage: assets.hero3, // Another image
-        titleClassName: "",
-        contentClassName: "",
-        CTAClassName: "bg-accent text-white",
-        contentBoxClassName: "lg:w-3/4"
-    }
+    // {
+    //     title: "Coffee Crafted by Nature, Delivered to You ",
+    //     content: "Experience the essence of pure coffee—handpicked from farms and roasted <br/> to perfection for an unforgettable taste.",
+    //     backgroundImage: assets.hero3, // Another image
+    //     titleClassName: "",
+    //     contentClassName: "",
+    //     CTAClassName: "bg-accent text-white",
+    //     contentBoxClassName: "lg:w-3/4"
+    // }
 ];
 
 const instagramPosts = [
