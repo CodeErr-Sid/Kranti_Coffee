@@ -17,7 +17,7 @@ const Dropdown = ({ options = [], onSelect, title }) => {
         className="quantity-button flex items-center justify-between border-2 border-[#016533] rounded-lg px-4 py-2 cursor-pointer"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-[#016533] font-bold">{selectedOption} KG</span>
+        <span className="text-[#016533] font-bold">{selectedOption}</span>
         <FaCaretDown color="#016533" />
       </div>
 
@@ -29,7 +29,7 @@ const Dropdown = ({ options = [], onSelect, title }) => {
               className="cursor-pointer px-4 py-2 text-[#016533] hover:bg-gray-100"
               onClick={() => handleSelect(option)}
             >
-              {option} KG
+              {option}
             </div>
           ))}
         </div>

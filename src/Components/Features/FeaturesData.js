@@ -28,7 +28,7 @@ const featuresData = [
     },
     {
         "featureHeading": "Processed and Cupped for Your Needs",
-        "featureContent": "Expertly processed and cupped at origin to match precise flavour profiles for your roasting goals. (profiles available upon request)",
+        "featureContent": "Expertly processed and cupped at origin to match precise flavour profiles for your roasting goals. (Profiles available upon request)",
         "featureIcon": assets.feature_erc
     }
 ]

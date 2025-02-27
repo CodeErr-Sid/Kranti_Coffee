@@ -8,11 +8,11 @@ import MediaGallery from './MediaGallery'
 const ProductCard = () => {
 
   const mediaData = [
-    { src: assets.productVideo, type: "video" },
-    { src: assets.productImage1, type: "image" },
-    { src: assets.productImage2, type: "image" },
+    // { src: assets.productImage1, type: "image" },
+    // { src: assets.productImage2, type: "image" },
     { src: assets.productImage3, type: "image" },
-    { src: assets.productImage1, type: "image" }
+    { src: assets.productImage1, type: "image" },
+    { src: assets.productVideo, type: "video" },
   ]
 
 
@@ -45,7 +45,7 @@ const ProductCard = () => {
             <h1 className="text-xl font-semibold text-gray-700 font-quickSand">Description</h1>
             {/* <h4 className="text-lg text-gray-500 mt-2">High-quality gourmet food item.</h4> */}
             <p className="text-sm text-gray-500 mt-1 font-quickSand">
-              Kranti Coffee delivers artisan-crafted perfection with handpicked beans from exclusive regions, offering a rich, bold flavor and captivating aroma. Perfect for any brewing method, each batch ensures a unique, authentic coffee experience, thanks to expert roasting and the finest quality beans.
+              Kranti Coffee delivers artisan-crafted perfection with handpicked beans from exclusive regions, offering a rich, bold flavor and captivating aroma. Perfect for any brewing method, each batch ensures a unique, authentic coffee experience, thanks to expert sample roasting and the finest quality beans.
             </p>
           </div>
 

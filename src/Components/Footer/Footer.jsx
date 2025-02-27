@@ -35,6 +35,9 @@ const Footer = () => {
           fontColor="dark"
           content={'GET NOW'}
         /> */}
+        <p className='flex flex-col md:flex-row gap-1 md:gap-2 items-center text-center font-semibold font-monteserrat text-white text-xl'>
+          KRANTI LLC
+        </p>
         <div className='flex flex-col md:flex-row gap-1 md:gap-2 items-center text-center font-semibold font-monteserrat text-white text-xl'>
           <FaLocationPin />
           <a target="_blank" href="https://maps.app.goo.gl/n5CWr8zzUfTZSd3R8">

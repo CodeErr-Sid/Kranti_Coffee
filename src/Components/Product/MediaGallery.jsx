@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import './Product.css'
 
 const MediaGallery = ({ media }) => {
-    const [selectedIndex, setSelectedIndex] = useState(0);
+    const [selectedIndex, setSelectedIndex] = useState(media.length - 1);
 
     const videoRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
