@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const SubscribeToNewsLetter = () => {
     const [email, setEmail] = useState('');
@@ -8,17 +9,12 @@ const SubscribeToNewsLetter = () => {
         e.preventDefault();
         setSubmitted(true);
 
-        const now = new Date();
-        const options = { weekday: 'long' };
         const formData = {
             email,
-            date: now.toLocaleDateString(),            // e.g., 4/23/2025
-            day: now.toLocaleDateString(undefined, options), // e.g., Wednesday
-            time: now.toLocaleTimeString(),            // e.g., 3:12:45 PM
         };
 
         try {
-            await fetch("https://script.google.com/macros/s/AKfycbwf621HqfsJPNhMnNbvPsig5Z7ub_ZfZ4HVwxs_Dh6kxxBHPlpHdhHo3K1gR-EHzQCNRA/exec", {
+            await fetch("https://script.google.com/macros/s/AKfycbwwj9yc60OUnmorJPd2Wh8bHGmPZl2wWFtrXWmPqwzYBheFpPElI0q0ln2_Vmkxc52Z/exec", {
                 method: "POST",
                 mode: "no-cors",
                 headers: {
@@ -28,7 +24,7 @@ const SubscribeToNewsLetter = () => {
             });
 
             setEmail('');
-            alert("Thanks for subscribing!");
+            toast.success("Thanks for subscribing!");
         } catch (err) {
             console.error("Submission failed", err);
         }

@@ -7,7 +7,7 @@ const missionData = [
         title: "Farmer Empowerment",
         description: "We work directly with farmers to ensure fair pay, shared growth, and generational sustainability.",
         imgSrc: assets.farmerEmpowerment,
-        bgOverlay: "rgba(232, 155, 177, 0.5)" // #e89bb1
+        bgOverlay: "rgb(203, 108, 230,0.5)",
     },
     {
         title: "Inclusivity",

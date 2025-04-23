@@ -8,6 +8,7 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import PreLoader from './Components/PageLoader/Preloader';
 import assets from './data/assets';
 import ScrollToTop from './Components/ScrollToTop/ScrollToTop';
+import { Bounce, ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -15,6 +16,19 @@ function App() {
   return (
     <>
       <PreLoader />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick={false}
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Bounce}
+      />
       <Router>
         <ScrollToTop />
         <NavbarSection />
