@@ -4,7 +4,6 @@ import Banner from '../../Components/Banner/Banner'
 import Process from '../../Components/Process/Process'
 import assets from '../../data/assets.js';
 import LineSection from '../../Components/LineSection/LineSection'
-import { content } from '../../data/VerticalSlider'
 import { instagramPosts, slidesContent } from '../../data/Hero'
 import InstagramPost from '../../Components/InstagramPosts/InstagramPost.jsx'
 import Mission from '../../Components/Features/Mission.jsx'

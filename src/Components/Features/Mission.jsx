@@ -79,7 +79,7 @@ const Mission = () => {
                                 className="relative z-10 h-full w-full flex flex-col justify-center items-center text-white p-4 rounded-md"
                                 style={{ backgroundColor: data.bgOverlay }}
                             >
-                                <h6 className="text-2xl font-semibold mb-2 font-monteserrat">{data.title}</h6>
+                                <h6 className="text-2xl font-semibold mb-2 font-tanAegan">{data.title}</h6>
                                 <p className="text-xl font-quickSand">{data.description}</p>
                             </div>
                         </motion.div>
