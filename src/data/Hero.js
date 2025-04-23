@@ -7,6 +7,7 @@ const slidesContent = [
         title: "Start Your Day Right with a Perfect Cup",
         content: "Experience the bold, authentic flavors of our premium coffee, carefully sourced from the finest farms.",
         backgroundImage: assets.krantiHeroBg2, // Path to the image
+        mobileBgImage: assets.krantinMobileBg,
     },
     // {
     //     title: "Order Your Free Coffee Now!",

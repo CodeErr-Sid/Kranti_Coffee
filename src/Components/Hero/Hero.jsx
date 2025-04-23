@@ -27,7 +27,7 @@ const HeroWithCarousel = ({ slides }) => {
             {slide.backgroundImage  && (
               <img
                 className="absolute inset-0 -z-10 w-full h-dvh md:h-full object-cover brightness-50 max-[425px]:top-8"
-                src={slide.backgroundImage}
+                src={slide.mobileBgImage}
               />
             )}
 

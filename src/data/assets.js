@@ -7,6 +7,7 @@ const assets = {
     krantiHero: '/assets/Kranti_Hero_image.svg',
     krantiHeroBg: '/assets/kranti_hero_bg.png',
     krantiHeroBg2: '/assets/hero3.webp',
+    krantinMobileBg: '/assets/hero-4.jpg',
     hero2: '/assets/hero-2.png',
     hero3: '/assets/hero-3.png',
     coffeePacketSlab: '/assets/kranti-barbara-honey-sundried.png',
