@@ -3,6 +3,7 @@ import assets from '../../data/assets.js';
 import { FaFacebook, FaInstagram, FaLinkedin, FaPhone } from 'react-icons/fa'
 import CallToAction from '../CallToAction/CallToAction.jsx';
 import { FaLocationPin } from 'react-icons/fa6';
+import SubscribeToNewsLetter from './SubscribeToNewsLetter.jsx';
 
 
 const Footer = () => {
@@ -14,6 +15,7 @@ const Footer = () => {
   return (
     <footer id='icontact' className="features-section bg-primary flex items-center py-12 px-6 sm:px-8 md:px-16">
       <div className="container flex flex-col items-left gap-4 items-center justify-around">
+        <SubscribeToNewsLetter />
         <div className="logo-section w-1/5">
           <img loading="lazy" src={assets.logo} alt="" />
         </div>

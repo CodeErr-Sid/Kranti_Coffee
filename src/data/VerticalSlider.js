@@ -8,16 +8,6 @@ const content = [
     icon: assets.sourcing1
   },
   {
-    title: "Post-Harvest Processing",
-    content: "Enhancing flavors through precise wet, dry, or honey processing.",
-    icon: assets.sourcing2
-  },
-  {
-    title: "Sourcing and Cupping",
-    content: "Building direct relationships and selecting quality through rigorous cupping.",
-    icon: assets.sourcing3
-  },
-  {
     title: "Export and Distribution",
     content: "Delivering green coffee efficiently while aligning with PSS standards.",
     icon: assets.sourcing4
@@ -26,6 +16,16 @@ const content = [
     title: "Community",
     content: "Supporting farmers through fair pricing, sustainability, and infrastructure.",
     icon: assets.sourcing5
+  },
+  {
+    title: "Sourcing and Cupping",
+    content: "Building direct relationships and selecting quality through rigorous cupping.",
+    icon: assets.sourcing3
+  },
+  {
+    title: "Post-Harvest Processing",
+    content: "Enhancing flavors through precise wet, dry, or honey processing.",
+    icon: assets.sourcing2
   },
   {
     title: "Soil and Harvesting",

@@ -91,10 +91,11 @@
 }
 
 .ball {
-  --radius: 25px;
+  --radius: 40px;
   width: var(--radius);
   height: var(--radius);
   background-color: #ffffff;
+  overflow: hidden;
   border-radius: 50%;
   border: 1px solid #114030;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
@@ -103,6 +104,15 @@
 
 .ball.active {
   background-color: #114030;
+}
+
+.ball img {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.ball.active img {
+  opacity: 1;
 }
 
 /* Sticky header styling */

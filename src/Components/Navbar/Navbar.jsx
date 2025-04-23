@@ -3,6 +3,7 @@ import assets from '../../data/assets.js';
 import { Link, useLocation } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import { HashLink } from "react-router-hash-link";
+import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -107,6 +108,21 @@ const Navbar = () => {
                   Order Now
                 </button>
               </Link>
+            </li>
+            <li className="mt-4 w-fit ml-2 md:hidden">
+              <div className="social-media-section">
+                <div className="flex gap-4 justify-around">
+                  <a href="https://www.instagram.com/kranticoffee/" target="_blank" rel="noopener noreferrer">
+                    <FaInstagram size={35} className="text-primary bg-white rounded-full p-2" />
+                  </a>
+                  <a href="https://www.linkedin.com/company/kranticoffee/" target="_blank" rel="noopener noreferrer">
+                    <FaLinkedin size={35} className="text-primary bg-white rounded-full p-2" />
+                  </a>
+                  <a href=" https://www.facebook.com/kranticoffeeuae" target="_blank" rel="noopener noreferrer">
+                    <FaFacebook size={35} className="text-primary bg-white rounded-full p-2" />
+                  </a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
