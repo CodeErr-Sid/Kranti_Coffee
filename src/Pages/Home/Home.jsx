@@ -1,14 +1,13 @@
 import React from 'react'
 import Hero from '../../Components/Hero/Hero'
-import Features from '../../Components/Features/Features'
 import Banner from '../../Components/Banner/Banner'
 import Process from '../../Components/Process/Process'
-import Testimonials from '../../Components/Testimonials/Testimonials'
 import assets from '../../data/assets.js';
 import LineSection from '../../Components/LineSection/LineSection'
 import { content } from '../../data/VerticalSlider'
 import { instagramPosts, slidesContent } from '../../data/Hero'
 import InstagramPost from '../../Components/InstagramPosts/InstagramPost.jsx'
+import Mission from '../../Components/Features/Mission.jsx'
 
 const Home = () => {
     return (
@@ -16,7 +15,7 @@ const Home = () => {
             <Hero
                 slides={slidesContent}
             />
-            <Features />
+            <Mission />
             <Banner
                 bannerHeading="Your Coffee Is on the House"
                 bannerContent="Each cup tells a story of dedication and quality, bringing the farm's soul to your daily ritual. Savor the taste of authentic, farm-sourced coffee—on us! Just cover delivery."
@@ -31,7 +30,7 @@ const Home = () => {
                 isButtonAvailable={false}
                 bannerBackgroundImage={assets.coffeeCupBg}
             /> */}
-            <LineSection contentArray={content} />
+            <LineSection/>
             <InstagramPost instagramURLS={instagramPosts} />
             <Banner
                 bannerHeading="EXPERIENCE OUR EXOTIC BREWS"

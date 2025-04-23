@@ -2,8 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from './LineSection.module.css'; // Import CSS Module
 import assets from '../../data/assets.js';
 import { motion } from 'framer-motion'
+import { content as contentArray } from '../../data/VerticalSlider.js';
 
-const LineSection = ({ contentArray }) => {
+const LineSection = () => {
     const childLineRef = useRef(null);
     const lineSectionRef = useRef(null);
     const [ballStates, setBallStates] = useState(contentArray.map(() => false));
@@ -104,7 +105,9 @@ const LineSection = ({ contentArray }) => {
                         <div className={styles.center}>
                             <div
                                 className={`${styles.ball} ${ballStates[index] ? styles.active : ''}`}
-                            ></div>
+                            >
+                                <img src='/kranti-favicon.jpg' alt="logo" />
+                            </div>
                         </div>
                         <div className={styles.rightContent}></div>
                     </div>

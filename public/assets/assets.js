@@ -49,7 +49,13 @@ import sourcing6 from './sourcing6.png'
 
 import coffeeBean from './singlecoffeebean.png'
 
+
 const assets = {
+
+    farmerEmpowerment,
+    Accessiblity,
+    Inclusivity,
+
     coffeeTopView,
     coffeePowerSpilled,
     coffeeBeanShovel,

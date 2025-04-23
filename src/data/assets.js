@@ -19,6 +19,11 @@ const assets = {
     feature_hb: '/assets/feature_hb.png',
     feature_rbf: '/assets/feature_rbf.png',
     feature_vbo: '/assets/feature_vbo.png',
+
+    farmerEmpowerment: '/assets/5.png',
+    Accessiblity: '/assets/6.png',
+    Inclusivity: '/assets/8.png',
+
     bannerBg: '/assets/banner_bg.png',
     coffeeBeansBg: '/assets/cofee-beans-sponn-bg.png',
     cartMobileHand: '/assets/cart_mobile_hand.png',
