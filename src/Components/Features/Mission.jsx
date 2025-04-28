@@ -39,7 +39,7 @@ const Mission = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                {"क्रांति  Kranti • verb • /kra:n.t̪i/"}
+                {"क्रांति Kranti • noun • /kraːn.t̪i/"}
             </motion.h3>
 
             <motion.p
@@ -49,7 +49,7 @@ const Mission = () => {
                 whileInView="visible"
                 viewport={{ once: true }}
             >
-                --{"Bring the Change"}--
+                --{"Bring the Change, A Revolution"}--
             </motion.p>
 
             <div className="grid grid-cols-1 grid-rows-3 md:grid-cols-2 md:grid-rows-2 w-full gap-4 h-auto md:h-[500px]">
