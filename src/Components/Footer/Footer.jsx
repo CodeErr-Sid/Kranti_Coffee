@@ -9,7 +9,7 @@ import SubscribeToNewsLetter from './SubscribeToNewsLetter.jsx';
 const Footer = () => {
 
 
-  const phoneNumber = '971506581227'
+  const phoneNumber = '+971506581227'
   const address = 'Al Fahidi District, Dubai, UAE'
 
   return (
